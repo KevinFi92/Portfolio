@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: "LibreCaslonText";
+  src: url("../public/assets/fonts/LibreCaslonText-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0 50px 0 50px;
+  font-family: "LibreCaslonText", sans-serif;
+  background-color: rgb(5, 12, 25);
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(9, 230, 244);
+}
+
+
