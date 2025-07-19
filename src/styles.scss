@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "LibreCaslonText";
-  src: url("../public/assets/fonts/LibreCaslonText-Regular.ttf");
+  font-family: "Roboto";
+  src: url("../public/assets/fonts/Roboto-VariableFont_wdth,wght.ttf");
   font-weight: normal;
   font-style: normal;
 }
@@ -8,14 +8,15 @@
 body {
   margin: 0;
   padding: 0 50px 0 50px;
-  font-family: "LibreCaslonText", sans-serif;
+  font-family: "Roboto", sans-serif;
   background-color: rgb(5, 12, 25);
   color: white;
+  overflow-x: hidden;
 }
 
 a {
   text-decoration: none;
-  color: rgb(9, 230, 244);
+  color: rgb(1, 252, 255);
 }
 
 button {
@@ -23,7 +24,7 @@ button {
 }
 
 .button-blue{
-  background-color: rgb(0, 200, 250);
+  background-color: rgb(1, 170, 254);
   border: none;
   border-radius: 10px;
   color: white;
@@ -34,9 +35,9 @@ button {
 
 .button-transparent{
   background-color: transparent;
-  border: 1px solid rgb(9, 230, 244);
+  border: 1px solid rgb(1, 252, 255);
   border-radius: 10px;
-  color: rgb(9, 230, 244);
+  color: rgb(1, 252, 255);
   font-size: 24px;
   padding : 10px 40px;
   font-weight: 500;

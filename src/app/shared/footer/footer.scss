@@ -1,0 +1,19 @@
+@import '../../../../public/assets/mixin/mixin';
+
+footer {
+  @include flex-box(row, center, space-between);
+
+  > img {
+    height: 80px;
+    width: 80px;
+  }
+}
+
+.social-media {
+  gap: 20px;
+  display: flex;
+
+  > img {
+    cursor: pointer;
+  }
+}

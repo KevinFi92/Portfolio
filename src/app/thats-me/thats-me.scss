@@ -1,0 +1,10 @@
+@import '../../../public/assets/mixin/mixin';
+
+.thats-me {
+  height: 90vh;
+  @include flex-box(row, center, space-evenly);
+}
+
+h1 {
+  font-size: 48px;
+}

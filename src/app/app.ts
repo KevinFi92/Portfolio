@@ -1,15 +1,16 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { ContactForm } from './contact-form/contact-form';
+import { ContactForm } from './thats-me/contact-me/contact-form';
 import { LandingPage } from './landing-page/landing-page';
 import { Projects } from './projects/projects';
-import { AboutMe } from './about-me/about-me';
+import { AboutMe } from './thats-me/about-me/about-me';
 import { Footer } from './shared/footer/footer';
 import { Header } from './shared/header/header';
+import {ThatsMe} from './thats-me/thats-me';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, ContactForm, LandingPage, Projects, Header, Footer, AboutMe],
+  imports: [RouterOutlet, ContactForm, LandingPage, Projects, Header, Footer, AboutMe, ThatsMe],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
