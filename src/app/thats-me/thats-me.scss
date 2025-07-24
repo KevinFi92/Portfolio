@@ -1,7 +1,7 @@
 @import '../../../public/assets/mixin/mixin';
 
 .thats-me {
-  height: 90vh;
+  height: 80vh;
   @include flex-box(row, center, space-evenly);
 }
 

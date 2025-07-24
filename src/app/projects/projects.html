@@ -1,6 +1,8 @@
+<section>
 <h1>Projects</h1>
 <div class="projects">
-<app-single-project></app-single-project>
-<app-single-project></app-single-project>
-<app-single-project></app-single-project>
+  @for (project of projects; track project.name ){
+    <app-single-project [project]="project"></app-single-project>
+  }
 </div>
+</section>

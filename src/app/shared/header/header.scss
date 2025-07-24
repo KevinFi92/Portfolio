@@ -3,6 +3,7 @@
 header {
   @include flex-box(row, center, space-between);
   width: 100%;
+
   > img {
     height: 80px;
     width: 80px;
@@ -13,8 +14,13 @@ a {
   color: white !important;
   font-size: 24px;
   padding-left: 20px;
-  &:hover{
-    color: rgb(1, 170, 254) !important;
+
+  &:hover {
+    color: rgb(0, 215, 254) !important;
+  }
+
+  &:active {
+    color: rgb(1, 115, 240) !important;
   }
 }
 
