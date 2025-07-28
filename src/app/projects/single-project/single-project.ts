@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import {Component, EventEmitter, Input, Output} from '@angular/core';
 import {MatButton} from '@angular/material/button';
 
 @Component({
@@ -10,8 +10,12 @@ import {MatButton} from '@angular/material/button';
   styleUrl: './single-project.scss'
 })
 export class SingleProject {
-  @Input() project!: { name: string; description: string; image: string }
+  @Input() project!: { name: string; description: string; image: string;}
+  @Input() id!: number;
+  @Output() projectId = new EventEmitter<number>();
 
-
+  emitId(){
+    this.projectId.emit(this.id);
+   }
 
 }

@@ -4,9 +4,30 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-
   gap: 50px;
+  transition: transform 0.5s ease-in-out;
 }
+
+  .btn-left {
+    background-color: transparent;
+    z-index: 50;
+    position: absolute;
+    left: 10px;
+    width: 5%;
+    height: 15%;
+    cursor: pointer;
+  }
+
+.btn-right {
+  background-color: transparent;
+  z-index: 50;
+  position: absolute;
+  right: 10px;
+  width: 5%;
+  height: 15%;
+  cursor: pointer;
+}
+
 
 h1 {
   font-size: 48px;

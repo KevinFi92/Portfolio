@@ -16,5 +16,7 @@ import {ThatsMe} from './thats-me/thats-me';
 })
 export class App {
   protected readonly title = signal('portfolio');
+
+
 }
 

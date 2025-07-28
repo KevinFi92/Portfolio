@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
 import {MatButton} from '@angular/material/button';
+
+
 
 @Component({
   selector: 'app-landing-page',
@@ -10,5 +12,11 @@ import {MatButton} from '@angular/material/button';
   styleUrl: './landing-page.scss'
 })
 export class LandingPage {
+
+
+
+
+
+
 
 }

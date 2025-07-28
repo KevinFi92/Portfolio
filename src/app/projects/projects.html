@@ -1,8 +1,10 @@
 <section>
-<h1>Projects</h1>
-<div class="projects">
-  @for (project of projects; track project.name ){
-    <app-single-project [project]="project"></app-single-project>
-  }
-</div>
+  <h1>Projects</h1>
+  <div class="projects">
+    <img (click)="nextProjectLeft()" class="btn-left" src="assets/img/left_arrow.png" alt="">
+    @for (project of projects; track project.name; let i = $index) {
+      <app-single-project [id]="i" [project]="project"></app-single-project>
+    }
+    <img (click)="nextProjectRight()" class="btn-right" src="assets/img/right_arrow.png" alt="">
+  </div>
 </section>
