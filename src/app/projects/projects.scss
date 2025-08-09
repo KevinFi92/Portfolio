@@ -1,22 +1,19 @@
+@import '../../../public/assets/mixin/mixin';
+
 .projects {
   height: 100vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
-  transition: transform 0.5s ease-in-out;
+  margin: 100px 50px 0 50px;
 }
 
-  .btn-left {
-    background-color: transparent;
-    z-index: 50;
-    position: absolute;
-    left: 10px;
-    width: 5%;
-    height: 15%;
-    cursor: pointer;
-  }
+.btn-left {
+  background-color: transparent;
+  z-index: 50;
+  position: absolute;
+  left: 10px;
+  width: 5%;
+  height: 15%;
+  cursor: pointer;
+}
 
 .btn-right {
   background-color: transparent;
@@ -32,3 +29,17 @@
 h1 {
   font-size: 48px;
 }
+
+
+//swiper down here
+
+swiper-container {
+  height: 80%;
+}
+
+swiper-slide {
+  background: rgb(16, 20, 20);
+  @include flex-box(row, center, center);
+}
+
+//swiper ends here

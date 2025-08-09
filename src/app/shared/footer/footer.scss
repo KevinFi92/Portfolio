@@ -2,6 +2,7 @@
 
 footer {
   @include flex-box(row, center, space-between);
+  margin: 0 50px 0 50px;
 
   > img {
     height: 80px;

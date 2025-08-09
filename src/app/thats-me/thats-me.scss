@@ -1,8 +1,11 @@
 @import '../../../public/assets/mixin/mixin';
 
+.about-me {
+  margin: 0 50px 0 50px;
+}
 .thats-me {
-  height: 80vh;
-  @include flex-box(row, center, space-evenly);
+  height: 100vh;
+  @include flex-box(column, center, space-evenly);
 }
 
 h1 {

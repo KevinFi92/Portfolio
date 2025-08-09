@@ -13,17 +13,17 @@ register();
   styleUrl: './projects.scss'
 })
 export class Projects {
-  id!:number;
+
   projects = [
     {
       name: "Join",
-      description: "Join is a Kanbanboard to organize your teams tasks." +
-        "Its build with Javascript and Firebase.",
+      description: "Join is a web-based Kanban tool with an integrated contact list that enables efficient task and team management. It is built using modern web technologies and uses Firebase as the backend for authentication, database, and real-time synchronization." +
+        "",
       image: "assets/img/projects/join.png"
     },
     {
       name: "El-Pollo-Loco",
-      description: "EL-Pollo-Loco is a 2D Videogame made with Javascript.",
+      description: "El Pollo Loco is a 2D jump ’n’ run game developed in JavaScript, with a focus on object-oriented programming. Help Pepe defeat the crazy chicken!",
       image: "assets/img/projects/el_pollo_loco.png"
     },
     {
@@ -34,26 +34,5 @@ export class Projects {
   ]
   private project: any;
 
-  onProgress(event: CustomEvent<[Swiper, number]>) {
-    const [swiper, progress] = event.detail;
-    console.log(progress);
-  }
-
-  onSlideChange() {
-    console.log('slide changed');
-  }
-
-
-  nextProjectLeft() {
-    setTimeout(() => {
-      [this.projects[0], this.projects[1], this.projects[2]] = [this.projects[1], this.projects[2], this.projects[0]];
-    }, 500)
-
-    }
-
-  nextProjectRight(){
-    setTimeout(() => {[this.projects[0], this.projects[1], this.projects[2]] = [this.projects[2], this.projects[0], this.projects[1]];}, 500)
-
-  }
 
 }

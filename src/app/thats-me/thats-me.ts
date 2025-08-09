@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 import { AboutMe } from './about-me/about-me';
-import { ContactForm } from './contact-me/contact-form';
+import {Skills} from '../skills/skills';
 
 @Component({
   selector: 'app-thats-me',
   imports: [
     AboutMe,
-    ContactForm
+    Skills
   ],
   templateUrl: './thats-me.html',
   styleUrl: './thats-me.scss'

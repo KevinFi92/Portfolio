@@ -2,7 +2,9 @@
 
 header {
   @include flex-box(row, center, space-between);
-  width: 100%;
+  padding: 0 50px 0 50px;
+  background-image: linear-gradient(to right, rgb(16, 20, 20), rgb(1, 115, 240));
+
 
   > img {
     height: 80px;
@@ -20,7 +22,7 @@ a {
   }
 
   &:active {
-    color: rgb(1, 115, 240) !important;
+    color: rgb(16, 20, 20) !important;
   }
 }
 

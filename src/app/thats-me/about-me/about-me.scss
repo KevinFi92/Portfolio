@@ -1,0 +1,30 @@
+@import '../../../../public/assets/mixin/mixin';
+
+.about-me {
+  @include flex-box(row, center, space-evenly);
+  margin: 0 50px 0 50px;
+  width: 80vw;
+  height: 100vh;
+  font-size: 28px;
+  line-height: 1.2;
+  gap: 150px
+}
+
+.about-txt{
+  @include flex-box(row, center, space-evenly);
+}
+
+.location{
+  height: 64px;
+  width: 64px;
+}
+
+.me{
+  margin-top: 50px;
+  @include flex-box(row, center,space-evenly);
+}
+
+.pins{
+  margin-top: 50px;
+  @include flex-box(column, center, center);
+}

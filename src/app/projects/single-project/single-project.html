@@ -1,11 +1,11 @@
 <section class="single-project">
   <div class="project-info">
     <div class="project-txt">
-      <h3>{{ project.name }}</h3>
+      <h1>{{ project.name }}</h1>
       <p>{{ project.description }}</p>
       <div class="project-btn">
-        <a matButton="filled" href="" class="button-blue">GitHub</a>
-        <a (click)="emitId()" matButton="outlined" class="button-transparent">project</a>
+        <a  matButton="outlined" class="button-transparent">GitHub</a>
+        <a  matButton="outlined" class="button-transparent">Live Test</a>
       </div>
     </div>
     <img src="{{project.image}}">

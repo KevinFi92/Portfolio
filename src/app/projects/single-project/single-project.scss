@@ -2,21 +2,16 @@
 
 .single-project {
   @include flex-box(column, space-between, center);
-  width: 45vw;
-  height: 45vh;
+  width: 65vw;
+  height: 65vh;
   border: 1px solid rgb(0, 215, 254);
-  border-radius: 10px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgb(0, 215, 254);
 
-
-  &:hover {
-    box-shadow: 0 0 10px rgb(0, 215, 254);
-    color: white;
-    transform: scale(1.1);
-  }
 
   img {
-    width: 450px;
-    height: 350px;
+    width: 50%;
+    height: 500px;
     border-radius: 10px;
   }
 }
@@ -29,28 +24,28 @@
 .project-txt {
   @include flex-box(column, flex-start, center);
   margin-right: 20px;
+  >h1{
+    font-size: 48px;
+  }
+  >p{
+    line-height: 1.2;
+    font-size: 24px;
+  }
+
 }
 
 .project-btn {
+  margin-top: 120px;
   display: flex;
-  gap: 10px;
-}
-
-.button-blue {
-  background-image: linear-gradient(to right, rgb(0, 215, 254), rgb(1, 115, 240)) !important;
-  color: white !important;
-  font-size: 14px !important;
-  font-weight: 500 !important;
-  padding: 5px 20px !important;
-  border-radius: 10px !important;
+  gap: 20px;
 }
 
 .button-transparent {
-  border: 1px solid rgb(1, 252, 255);
+  border: 2.5px solid white !important;;
   border-radius: 10px !important;
-  color: rgb(0, 215, 254) !important;
-  font-size: 14px !important;
-  padding: 5px 20px !important;
+  color: white !important;
+  font-size: 28px !important;
+  padding: 20px 35px !important;
   font-weight: 500 !important;
 }
 

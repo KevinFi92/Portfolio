@@ -1,0 +1,18 @@
+@import '../../../public/assets/mixin/mixin';
+
+h1 {
+  font-size: 48px;
+}
+
+.skills{
+  margin: 0 50px 0 50px;
+  height: 80vh;
+}
+
+.skill-icons{
+  @include flex-box(row, center, center);
+  height: 80%;
+}
+
+
+
