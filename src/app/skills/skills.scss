@@ -9,9 +9,29 @@ h1 {
   height: 80vh;
 }
 
+.skill-content{
+  @include flex-box(row, center, center);
+  margin-top: 100px;
+  height: 80%;
+}
+
+.skills-txt{
+  font-size: 28px;
+  line-height: 1.2;
+  width: 50%;
+}
+
 .skill-icons{
   @include flex-box(row, center, center);
-  height: 80%;
+  display: grid;
+  grid-template-columns: repeat(5, 50px);
+  gap: 50px;
+  width: 50%;
+}
+
+.contact-btn{
+  @include flex-box(row, center, flex-end);
+  margin-top: 50px;
 }
 
 

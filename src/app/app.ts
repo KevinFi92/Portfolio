@@ -8,10 +8,11 @@ import { Footer } from './shared/footer/footer';
 import { Header } from './shared/header/header';
 import {ThatsMe} from './thats-me/thats-me';
 import {Skills} from './skills/skills';
+import {MatDialogModule} from '@angular/material/dialog';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, ContactForm, LandingPage, Projects, Header, Footer, AboutMe, ThatsMe, Skills],
+  imports: [RouterOutlet, ContactForm, LandingPage, Projects, Header, Footer, AboutMe, ThatsMe, Skills, MatDialogModule],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
