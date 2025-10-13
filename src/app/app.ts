@@ -9,10 +9,11 @@ import { Header } from './shared/header/header';
 import {ThatsMe} from './thats-me/thats-me';
 import {Skills} from './skills/skills';
 import {MatDialogModule} from '@angular/material/dialog';
+import {ContactDialog} from './contact-dialog/contact-dialog';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, ContactForm, LandingPage, Projects, Header, Footer, AboutMe, ThatsMe, Skills, MatDialogModule],
+  imports: [RouterOutlet, ContactForm, LandingPage, Projects, Header, Footer, AboutMe, ThatsMe, Skills, MatDialogModule, ContactDialog],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })

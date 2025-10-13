@@ -3,13 +3,16 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatDialogModule} from '@angular/material/dialog';
-import {FormControl, ReactiveFormsModule, Validators} from '@angular/forms';
+import {FormControl, NgForm, ReactiveFormsModule, Validators} from '@angular/forms';
 import {merge} from 'rxjs';
 import {takeUntilDestroyed} from '@angular/core/rxjs-interop';
+import {MatButton} from '@angular/material/button';
+import {FormsModule} from '@angular/forms';
 
 @Component({
   selector: 'app-contact-dialog',
-  imports: [MatFormFieldModule, MatInputModule, MatSelectModule, MatDialogModule, ReactiveFormsModule],
+  imports: [MatFormFieldModule, MatInputModule, MatSelectModule, MatDialogModule, ReactiveFormsModule, MatButton,
+  FormsModule],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './contact-dialog.html',
   styleUrl: './contact-dialog.scss'
@@ -32,6 +35,18 @@ import {takeUntilDestroyed} from '@angular/core/rxjs-interop';
       this.errorMessage.set('Not a valid email');
     } else {
       this.errorMessage.set('');
+    }
+  }
+
+  contactData = {
+    name: "",
+    email: "",
+    message: ""
+  }
+
+  onSubmit(ngForm: NgForm){
+    if(ngForm.valid){
+      console.log(this.contactData)
     }
   }
 

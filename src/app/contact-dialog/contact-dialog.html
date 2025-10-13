@@ -1,22 +1,29 @@
-<mat-form-field>
-  <mat-label>Name</mat-label>
-  <input matInput>
-</mat-form-field>
-<mat-form-field>
-  <mat-label>Enter your email</mat-label>
-  <input
-    matInput
-    placeholder="pat@example.com"
-    [formControl]="email"
-    (blur)="updateErrorMessage()"
-    required
-  />
-  @if (email.invalid) {
-    <mat-error>{{errorMessage()}}</mat-error>
-  }
-</mat-form-field>
-<mat-form-field>
-  <mat-label>Textarea</mat-label>
-  <textarea matInput></textarea>
-</mat-form-field>
-
+<section class="contact-dialog">
+  <h1>< contact me ></h1>
+    <form #contactForm="ngForm" class="contact-form" (ngSubmit)="onSubmit(contactForm)">
+    <mat-form-field style="width: 400px">
+      <mat-label>Name</mat-label>
+      <input [(ngModel)]="contactData.name" matInput required placeholder="Firstname Lastname" name="name">
+    </mat-form-field>
+    <mat-form-field style="width: 400px">
+      <mat-label>Enter your email</mat-label>
+      <input
+        [(ngModel)]="contactData.email"
+        name="email"
+        matInput
+        placeholder="pat@example.com"
+        (blur)="updateErrorMessage()"
+        required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+        #email="ngModel"
+      />
+      @if (email.invalid) {
+        <mat-error>{{ errorMessage() }}</mat-error>
+      }
+    </mat-form-field>
+  <mat-form-field style="height: 250px; width: 400px">
+    <mat-label >Textarea</mat-label>
+    <textarea [(ngModel)]="contactData.message" name="message" matInput required></textarea>
+  </mat-form-field>
+      <button type="submit" matButton="outlined" class="button-transparent">Message Me</button>
+    </form>
+</section>

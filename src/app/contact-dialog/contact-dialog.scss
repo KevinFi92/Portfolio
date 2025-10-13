@@ -1,1 +1,17 @@
+@import '../../../public/assets/mixin/mixin';
+
+.contact-dialog{
+  margin: 0 50px 0 50px;
+  height: 80vh;
+}
+
+h1 {
+font-size: 48px;
+}
+
+.contact-form {
+  @include flex-box(column, center, center);
+  margin-top: 200px;
+
+ }
 
