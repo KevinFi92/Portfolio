@@ -1,4 +1,4 @@
-@import '../../../../public/assets/mixin/mixin';
+@import '../../../public/assets/mixin/mixin';
 
 .about-me {
   @include flex-box(row, center, space-evenly);

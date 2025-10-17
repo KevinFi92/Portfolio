@@ -3,17 +3,16 @@ import { RouterOutlet } from '@angular/router';
 import { ContactForm } from './shared/contact-me/contact-form';
 import { LandingPage } from './landing-page/landing-page';
 import { Projects } from './projects/projects';
-import { AboutMe } from './thats-me/about-me/about-me';
+import { AboutMe } from './about-me/about-me';
 import { Footer } from './shared/footer/footer';
 import { Header } from './shared/header/header';
-import {ThatsMe} from './thats-me/thats-me';
 import {Skills} from './skills/skills';
 import {MatDialogModule} from '@angular/material/dialog';
 import {ContactDialog} from './contact-dialog/contact-dialog';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, ContactForm, LandingPage, Projects, Header, Footer, AboutMe, ThatsMe, Skills, MatDialogModule, ContactDialog],
+  imports: [RouterOutlet, ContactForm, LandingPage, Projects, Header, Footer, AboutMe, Skills, MatDialogModule, ContactDialog],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })

@@ -35,13 +35,16 @@ html {
   font-style: normal;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   height: 100%;
   font-family: "Roboto", sans-serif;
   color: white;
   overflow-x: hidden;
-  scroll-behavior: smooth;
 }
 
 
