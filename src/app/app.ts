@@ -1,6 +1,5 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { ContactForm } from './shared/contact-me/contact-form';
 import { LandingPage } from './landing-page/landing-page';
 import { Projects } from './projects/projects';
 import { AboutMe } from './about-me/about-me';
@@ -12,7 +11,7 @@ import {ContactDialog} from './contact-dialog/contact-dialog';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, ContactForm, LandingPage, Projects, Header, Footer, AboutMe, Skills, MatDialogModule, ContactDialog],
+  imports: [RouterOutlet, LandingPage, Projects, Header, Footer, AboutMe, Skills, MatDialogModule, ContactDialog],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
