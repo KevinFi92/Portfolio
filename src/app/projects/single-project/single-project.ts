@@ -1,10 +1,12 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
 import {MatButton} from '@angular/material/button';
+import {NgOptimizedImage} from '@angular/common';
 
 @Component({
   selector: 'app-single-project',
   imports: [
-    MatButton
+    MatButton,
+    NgOptimizedImage
   ],
   templateUrl: './single-project.html',
   styleUrl: './single-project.scss'

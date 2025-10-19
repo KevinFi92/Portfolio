@@ -9,9 +9,9 @@
   box-shadow: 0 0 10px rgb(0, 215, 254);
 
 
-  img {
+  .project-img {
     width: 50%;
-    height: 500px;
+    height: 95%;
     border-radius: 10px;
   }
 }
@@ -24,24 +24,25 @@
 .project-txt {
   @include flex-box(column, flex-start, center);
   margin-right: 20px;
-  >h1{
+
+  > h1 {
     font-size: 48px;
   }
-  >p{
+
+  > p {
     line-height: 1.2;
     font-size: 24px;
   }
-
 }
 
 .project-btn {
-  margin-top: 120px;
+  margin-top: 10%;
   display: flex;
   gap: 20px;
 }
 
 .button-transparent {
-  border: 2.5px solid white !important;;
+  border: 2.5px solid white !important;
   border-radius: 10px !important;
   color: white !important;
   font-size: 28px !important;
@@ -49,3 +50,22 @@
   font-weight: 500 !important;
 }
 
+@media screen and (max-width: 1310px) {
+  
+  .button-transparent {
+    font-size: 24px !important;
+    padding: 20px 35px !important;
+  }
+
+  .project-txt {
+    > p {
+      line-height: 1.2;
+      font-size: 18px;
+    }
+  }
+
+  .button-transparent {
+    font-size: 22px !important;
+  }
+
+}

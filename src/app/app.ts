@@ -8,10 +8,11 @@ import { Header } from './shared/header/header';
 import {Skills} from './skills/skills';
 import {MatDialogModule} from '@angular/material/dialog';
 import {ContactDialog} from './contact-dialog/contact-dialog';
+import { NgOptimizedImage } from '@angular/common';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, LandingPage, Projects, Header, Footer, AboutMe, Skills, MatDialogModule, ContactDialog],
+  imports: [RouterOutlet, LandingPage, Projects, Header, Footer, AboutMe, Skills, MatDialogModule, ContactDialog, NgOptimizedImage],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })

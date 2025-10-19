@@ -32,8 +32,6 @@ h1 {
 }
 
 
-//swiper down here
-
 swiper-container {
   height: 80%;
 }
@@ -43,4 +41,4 @@ swiper-slide {
   @include flex-box(row, center, center);
 }
 
-//swiper ends here
+
