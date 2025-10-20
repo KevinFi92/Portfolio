@@ -4,13 +4,17 @@ header {
   @include flex-box(row, center, space-between);
   padding: 0 50px 0 50px;
   background-image: linear-gradient(to right, rgb(16, 20, 20), rgb(1, 115, 240));
-
-
   > img {
     height: 80px;
     width: 80px;
   }
 }
+
+.menu{
+  display: none;
+}
+
+
 
 a {
   color: white !important;
@@ -23,6 +27,21 @@ a {
 
   &:active {
     color: rgb(16, 20, 20) !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  a{
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .links{
+    display: none;
+  }
+  .menu{
+    display: block;
   }
 }
 

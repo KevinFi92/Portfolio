@@ -24,6 +24,7 @@
 .project-txt {
   @include flex-box(column, flex-start, center);
   margin-right: 20px;
+  width: 90%;
 
   > h1 {
     font-size: 48px;
@@ -51,7 +52,7 @@
 }
 
 @media screen and (max-width: 1310px) {
-  
+
   .button-transparent {
     font-size: 24px !important;
     padding: 20px 35px !important;
@@ -66,6 +67,25 @@
 
   .button-transparent {
     font-size: 22px !important;
+  }
+
+}
+
+@media screen and (max-width: 893px) {
+  .project-info {
+    @include flex-box(column, space-between, center);
+    >img{
+      width: 800px;
+      height: 500px;
+    }
+  }
+
+  .button-transparent {
+    font-size: 18px !important;
+  }
+
+  .project-btn {
+    margin: 10px 0 20px 0;
   }
 
 }

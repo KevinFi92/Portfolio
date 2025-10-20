@@ -32,7 +32,5 @@ export class Projects {
       image: "assets/img/myLogo.png"
     }
   ]
-  private project: any;
-
 
 }

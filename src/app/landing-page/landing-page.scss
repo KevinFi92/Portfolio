@@ -30,3 +30,32 @@ h2 {
 .matButton {
   font-size: 24px;
 }
+
+@media screen and (max-width: 700px) {
+  p {
+    font-size: 28px;
+  }
+
+  h1 {
+    font-size: 90px;
+  }
+
+  h2 {
+    font-size: 42px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  p {
+    font-size: 24px;
+  }
+
+  h1 {
+    font-size: 80px;
+  }
+
+  h2 {
+    font-size: 34px;
+  }
+
+}
