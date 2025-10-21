@@ -87,5 +87,12 @@
   .project-btn {
     margin: 10px 0 20px 0;
   }
+}
 
+@media screen and (max-width: 550px) {
+  .project-txt {
+    > h1 {
+      font-size: 38px;
+    }
+  }
 }

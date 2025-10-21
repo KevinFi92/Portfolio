@@ -42,7 +42,23 @@ h1 {
 
 @media screen and (max-width: 668px) {
   .me {
-
     gap: 80px;
   }
+}
+
+@media screen and (max-width: 550px) {
+  h1 {
+    font-size: 38px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .me {
+    gap: 50px;
+  }
+  .location {
+    height: 44px;
+    width: 44px;
+  }
+
 }

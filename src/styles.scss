@@ -91,3 +91,10 @@ button {
   background:  white;
   border-radius: 10px;
 }
+
+@media screen and (max-width: 550px) {
+  .button-transparent{
+    font-size: 18px !important;
+    padding : 10px 20px !important;
+  }
+}

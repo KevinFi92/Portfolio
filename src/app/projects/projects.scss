@@ -20,4 +20,8 @@ swiper-slide {
   @include flex-box(row, center, center);
 }
 
-
+@media screen and (max-width: 550px) {
+  h1 {
+    font-size: 38px;
+  }
+}
