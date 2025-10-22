@@ -12,8 +12,13 @@ font-size: 48px;
 .contact-form {
   @include flex-box(column, center, center);
   margin-top: 200px;
-
  }
+
+//is added to highlight the contact form
+.highlight {
+  box-shadow: 0 0 10px rgb(0, 215, 254);
+  transition: outline 0.3s ease;
+}
 
 @media screen and (max-width: 450px) {
   h1 {

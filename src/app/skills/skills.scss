@@ -24,7 +24,7 @@ h1 {
 .skill-icons{
   @include flex-box(row, center, center);
   display: grid;
-  grid-template-columns: repeat(5, 50px);
+  grid-template-columns: repeat(5, 85px);
   gap: 50px;
   width: 50%;
   >img{
@@ -79,6 +79,15 @@ h1 {
 @media screen and (max-width: 480px) {
   .skill-icons {
     gap: 25px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .skills-txt {
+    font-size: 20px;
+  }
+  .skill-icons {
+    grid-template-columns: repeat(4, 40px);
   }
 }
 

@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, ElementRef } from '@angular/core';
+import { HighlightStore } from './highlight.store';
 
 @Component({
   selector: 'app-footer',
@@ -7,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrl: './footer.scss'
 })
 export class Footer {
+  constructor(private highlightStore: HighlightStore) {}
 
+  onEmailClick() {
+    this.highlightStore.triggerHighlight();
+  }
 }

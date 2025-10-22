@@ -1,4 +1,4 @@
-import {ChangeDetectionStrategy, Component, inject, signal} from '@angular/core';
+import {ChangeDetectionStrategy, Component, effect, ElementRef, inject, signal, ViewChild} from '@angular/core';
 import {MatSelectModule} from '@angular/material/select';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
@@ -9,25 +9,44 @@ import {takeUntilDestroyed} from '@angular/core/rxjs-interop';
 import {MatButton} from '@angular/material/button';
 import {FormsModule} from '@angular/forms';
 import {HttpClient} from '@angular/common/http';
+import {HighlightStore} from '../shared/footer/highlight.store';
 
 @Component({
   selector: 'app-contact-dialog',
   imports: [MatFormFieldModule, MatInputModule, MatSelectModule, MatDialogModule, ReactiveFormsModule, MatButton,
-  FormsModule],
+    FormsModule],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './contact-dialog.html',
   styleUrl: './contact-dialog.scss'
 })
-    export class ContactDialog {
+export class ContactDialog {
+  @ViewChild('emailInput') emailInput!: ElementRef<HTMLInputElement>;
+  @ViewChild('contactForm') contactForm!: ElementRef<HTMLInputElement>;
   readonly email = new FormControl('', [Validators.required, Validators.email]);
   http = inject(HttpClient);
 
   errorMessage = signal('');
 
-  constructor() {
+  constructor(private highlightStore: HighlightStore) {
     merge(this.email.statusChanges, this.email.valueChanges)
       .pipe(takeUntilDestroyed())
       .subscribe(() => this.updateErrorMessage());
+
+    effect(() => {
+      if (this.highlightStore.highlightEmail()) {
+        this.focusAndHighlight();
+      }
+    });
+  }
+
+  focusAndHighlight() {
+    const input = this.emailInput?.nativeElement;
+    const form = this.contactForm?.nativeElement;
+    if (input) {
+      input.focus();
+      form.classList.add('highlight');
+      setTimeout(() => form.classList.remove('highlight'), 1000);
+    }
   }
 
   updateErrorMessage() {

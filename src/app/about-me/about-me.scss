@@ -60,5 +60,26 @@ h1 {
     height: 44px;
     width: 44px;
   }
+  .pins{
+    >p {
+      font-size: 20px;
+    }
+  }
+}
 
+@media screen and (max-width: 380px) {
+  .me {
+    gap: 30px;
+  }
+  .pins{
+    >p {
+      font-size: 18px;
+    }
+  }
+  h1 {
+    font-size: 32px;
+  }
+  .about-me-content {
+    font-size: 20px;
+  }
 }
