@@ -1,9 +1,9 @@
 <section id="contact-dialog" class="contact-dialog">
   <h1>< contact me ></h1>
   <form #contactForm="ngForm" class="contact-form" (ngSubmit)="onSubmit(contactForm)">
-    <mat-form-field  style="width: 400px">
+    <mat-form-field style="width: 400px">
       <mat-label>Name</mat-label>
-      <input [(ngModel)]="contactData.name"  #emailInput matInput required placeholder="Firstname Lastname" name="name">
+      <input [(ngModel)]="contactData.name" #emailInput matInput required placeholder="Firstname Lastname" name="name">
     </mat-form-field>
     <mat-form-field style="width: 400px">
       <mat-label>Enter your email</mat-label>

@@ -12,14 +12,14 @@ import {HttpClient} from '@angular/common/http';
 import {HighlightStore} from '../shared/footer/highlight.store';
 
 @Component({
-  selector: 'app-contact-dialog',
+  selector: 'app-contact-me',
   imports: [MatFormFieldModule, MatInputModule, MatSelectModule, MatDialogModule, ReactiveFormsModule, MatButton,
     FormsModule],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  templateUrl: './contact-dialog.html',
-  styleUrl: './contact-dialog.scss'
+  templateUrl: './contact-me.html',
+  styleUrl: './contact-me.scss'
 })
-export class ContactDialog {
+export class ContactMe {
   @ViewChild('emailInput') emailInput!: ElementRef<HTMLInputElement>;
   @ViewChild('contactForm') contactForm!: ElementRef<HTMLInputElement>;
   readonly email = new FormControl('', [Validators.required, Validators.email]);

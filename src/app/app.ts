@@ -7,12 +7,12 @@ import { Footer } from './shared/footer/footer';
 import { Header } from './shared/header/header';
 import {Skills} from './skills/skills';
 import {MatDialogModule} from '@angular/material/dialog';
-import {ContactDialog} from './contact-dialog/contact-dialog';
+import {ContactMe} from './contact-me/contact-me';
 import { NgOptimizedImage } from '@angular/common';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, LandingPage, Projects, Header, Footer, AboutMe, Skills, MatDialogModule, ContactDialog, NgOptimizedImage],
+  imports: [RouterOutlet, LandingPage, Projects, Header, Footer, AboutMe, Skills, MatDialogModule, ContactMe, NgOptimizedImage],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
