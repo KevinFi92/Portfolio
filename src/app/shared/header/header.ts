@@ -10,5 +10,18 @@ import {Menu} from '../menu/menu';
   styleUrl: './header.scss'
 })
 export class Header {
-
+  links = [
+    {
+      name: "About Me",
+      link: "#about-me"
+    },
+    {
+      name: "Projects",
+      link: "#projects"
+    },
+    {
+      name: "Contact",
+      link: "#contact-dialog"
+    }
+  ]
 }

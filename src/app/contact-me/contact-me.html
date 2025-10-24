@@ -1,11 +1,11 @@
 <section id="contact-dialog" class="contact-dialog">
   <h1>< contact me ></h1>
   <form #contactForm="ngForm" class="contact-form" (ngSubmit)="onSubmit(contactForm)">
-    <mat-form-field style="width: 400px">
+    <mat-form-field class="form-field">
       <mat-label>Name</mat-label>
       <input [(ngModel)]="contactData.name" #emailInput matInput required placeholder="Firstname Lastname" name="name">
     </mat-form-field>
-    <mat-form-field style="width: 400px">
+    <mat-form-field class="form-field">
       <mat-label>Enter your email</mat-label>
       <input
         [(ngModel)]="contactData.email"
@@ -20,7 +20,7 @@
         <mat-error>{{ errorMessage() }}</mat-error>
       }
     </mat-form-field>
-    <mat-form-field style="height: 250px; width: 400px">
+    <mat-form-field class="form-field" style="height: 250px">
       <mat-label>Textarea</mat-label>
       <textarea [(ngModel)]="contactData.message" name="message" matInput required></textarea>
     </mat-form-field>
