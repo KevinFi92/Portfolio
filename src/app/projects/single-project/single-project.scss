@@ -18,13 +18,15 @@
 
 .project-info {
   @include flex-box(row, center, center);
-  margin: 20px;
+  width: 95%;
+  margin-left: 20px;
 }
 
 .project-txt {
   @include flex-box(column, flex-start, center);
   margin-right: 20px;
   width: 90%;
+
 
   > h1 {
     font-size: 48px;
@@ -71,12 +73,13 @@
 
 }
 
-@media screen and (max-width: 893px) {
+@media screen and (max-width: 920px) {
   .project-info {
-    @include flex-box(column, space-between, center);
-    >img{
-      width: 800px;
-      height: 500px;
+    flex-direction: column;
+
+    > img {
+      width: 80% !important;
+      height: 40% !important;
     }
   }
 
@@ -99,8 +102,34 @@
     > p {
       font-size: 14px;
     }
+
     > h1 {
       font-size: 32px;
     }
   }
 }
+
+@media screen and (max-width: 450px) {
+  .button-transparent {
+    font-size: 16px !important;
+    padding: 10px 20px !important;
+  }
+
+  .project-btn {
+    margin: 10px 0 20px 0;
+  }
+
+  .project-info {
+    height: 100%;
+
+
+    > img {
+      width: 80% !important;
+    }
+  }
+  single-project {
+    width: 95vw !important;
+  }
+}
+
+

@@ -57,6 +57,9 @@ h1 {
       width: 80px;
     }
   }
+  .skill-icons {
+    grid-template-columns: repeat(5, 40px);
+  }
 }
 
 @media screen and (max-width: 550px) {

@@ -30,3 +30,13 @@ swiper-slide {
     scroll-margin-top: 80px;
   }
 }
+
+@media screen and (max-width: 440px) {
+  swiper-container::part(button-next),
+  swiper-container::part(button-prev) {
+    display: none !important;
+  }
+}
+
+
+

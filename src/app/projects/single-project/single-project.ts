@@ -16,8 +16,6 @@ export class SingleProject {
   @Input() id!: number;
   @Output() projectId = new EventEmitter<number>();
 
-  emitId(){
-    this.projectId.emit(this.id);
-   }
+
 
 }
