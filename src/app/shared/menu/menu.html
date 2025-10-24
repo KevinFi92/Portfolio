@@ -1,6 +1,10 @@
 <button class="menu-btn" matButton [matMenuTriggerFor]="menu"><mat-icon class="mat-icon">more_vert</mat-icon></button>
 <mat-menu #menu="matMenu">
-  <a href="#about-me" mat-menu-item>About Me</a>
-  <a href="#projects" mat-menu-item>Projects</a>
-  <a href="#contact-dialog" mat-menu-item>Contact</a>
+  @for (link of links; track link.name) {
+    @if (link.isAction) {
+      <a mat-menu-item (click)="onLinkClick(link)">{{ link.name }}</a>
+    } @else {
+      <a mat-menu-item [href]="link.link">{{ link.name }}</a>
+    }
+  }
 </mat-menu>

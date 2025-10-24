@@ -1,5 +1,5 @@
 import { Component, ViewChild, ElementRef } from '@angular/core';
-import { HighlightStore } from './highlight.store';
+import { HighlightStore } from '../highlight.store';
 import {Menu} from '../menu/menu';
 
 @Component({
@@ -14,21 +14,27 @@ export class Footer {
   links = [
     {
       name: "GitHub",
-      link: "https://github.com/Kevin-Klein"
+      link: "https://github.com/KevinFi92"
     },
     {
       name: "linkedin",
-      link: "https://www.linkedin.com/in/kevin-klein-00000020b/"
+      link: "https://www.linkedin.com/in/kevin-fischer-39a6b734a/"
     },
     {
       name: "Email",
-      link: "(click)=\"onEmailClick()\""
+      link: "email",
+      isAction: true
     }
   ]
 
 
   constructor(private highlightStore: HighlightStore) {}
 
+  handleLinkClick(action: string) {
+    if (action === 'email') {
+      this.onEmailClick();
+    }
+  }
   onEmailClick() {
     this.highlightStore.triggerHighlight();
   }

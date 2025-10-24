@@ -9,7 +9,7 @@ import {takeUntilDestroyed} from '@angular/core/rxjs-interop';
 import {MatButton} from '@angular/material/button';
 import {FormsModule} from '@angular/forms';
 import {HttpClient} from '@angular/common/http';
-import {HighlightStore} from '../shared/footer/highlight.store';
+import {HighlightStore} from '../shared/highlight.store';
 
 @Component({
   selector: 'app-contact-me',
