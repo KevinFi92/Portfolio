@@ -10,6 +10,8 @@
 
 
   .project-img {
+    display: flex;
+    justify-content: flex-start;
     width: 50%;
     height: 95%;
     border-radius: 10px;
@@ -76,6 +78,7 @@
 @media screen and (max-width: 920px) {
   .project-info {
     flex-direction: column;
+    align-items: flex-start;
 
     > img {
       width: 80% !important;
@@ -107,28 +110,28 @@
       font-size: 32px;
     }
   }
+  .project-info {
+    height: 100%;
+
+    > img {
+      width: 85% !important;
+    }
+  }
+
 }
 
 @media screen and (max-width: 450px) {
   .button-transparent {
-    font-size: 16px !important;
-    padding: 10px 20px !important;
+    font-size: 14px !important;
+    padding: 10px 15px !important;
   }
 
   .project-btn {
     margin: 10px 0 20px 0;
   }
 
-  .project-info {
-    height: 100%;
-
-
-    > img {
-      width: 80% !important;
-    }
-  }
-  single-project {
-    width: 95vw !important;
+  .single-project {
+    width: 75vw !important;
   }
 }
 

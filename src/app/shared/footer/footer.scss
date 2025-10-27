@@ -10,8 +10,23 @@ footer {
   }
 }
 
-.menu{
+.menu {
   display: none;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  > p {
+
+    > a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+
 }
 
 .social-media {
@@ -31,10 +46,10 @@ footer {
 }
 
 @media screen and (max-width: 470px) {
-  .menu{
+  .menu {
     display: block;
   }
-  .social-media{
+  .social-media {
     display: none;
   }
 }

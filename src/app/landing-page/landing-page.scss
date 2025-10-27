@@ -71,3 +71,26 @@ h2 {
     text-align: center;
   }
 }
+
+@media screen and (max-width: 375px) {
+  p {
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+  .button-container {
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .button-container {
+    gap: 15px;
+  }
+}
