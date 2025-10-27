@@ -3,8 +3,15 @@
   @for (link of links; track link.name) {
     @if (link.isAction) {
       <a mat-menu-item (click)="onLinkClick(link)">{{ link.name }}</a>
-    } @else {
-      <a mat-menu-item [href]="link.link">{{ link.name }}</a>
+    }
+    @if (link.isExternal) {
+      <a mat-menu-item [href]="link.link" target="_blank">{{ link.name }}</a>
+    }
+    @if (link.isSection) {
+      <a mat-menu-item routerLink="/" fragment="{{ link.link }}">{{ link.name }}</a>
+    }
+    @if (link.isRoute){
+      <a mat-menu-item routerLink="">{{ link.name }}</a>
     }
   }
 </mat-menu>

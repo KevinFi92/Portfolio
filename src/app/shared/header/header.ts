@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
 import {Menu} from '../menu/menu';
+import {RouterLink} from '@angular/router';
 
 @Component({
   selector: 'app-header',
   imports: [
-    Menu
+    Menu,
+    RouterLink
   ],
   templateUrl: './header.html',
   styleUrl: './header.scss'
@@ -12,16 +14,24 @@ import {Menu} from '../menu/menu';
 export class Header {
   links = [
     {
+      name: "Home",
+      link: "",
+      isRoute: true
+    },
+    {
       name: "About Me",
-      link: "#about-me"
+      link: "about-me",
+      isSection: true
     },
     {
       name: "Projects",
-      link: "#projects"
+      link: "projects",
+      isSection: true
     },
     {
       name: "Contact",
-      link: "#contact-dialog"
+      link: "contact-dialog",
+      isSection: true
     }
   ]
 }

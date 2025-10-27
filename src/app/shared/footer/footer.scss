@@ -52,4 +52,12 @@ footer {
   .social-media {
     display: none;
   }
+  footer {
+    margin: 0 10px 0 10px;
+
+    > img {
+      height: 60px;
+      width: 60px;
+    }
+  }
 }

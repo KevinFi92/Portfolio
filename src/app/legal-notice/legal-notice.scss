@@ -1,0 +1,18 @@
+.impressum {
+  font-size: 24px;
+  padding-left: 50px;
+  padding-right: 50px;
+  line-height: 1.2;
+}
+
+.vermerk{
+  font-size: 12px;
+}
+
+@media screen and (max-width: 330px) {
+  .impressum {
+    font-size: 18px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
