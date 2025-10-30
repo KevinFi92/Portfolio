@@ -11,7 +11,7 @@ import {MatButton} from '@angular/material/button';
   styleUrl: './single-project.scss'
 })
 export class SingleProject {
-  @Input() project!: { name: string; description: string; image: string;}
+  @Input() project!: { name: string; description: string; image: string; link: string;GitHub: string;}
 
 
 

@@ -4,8 +4,8 @@
       <h1>{{ project.name }}</h1>
       <p>{{ project.description }}</p>
       <div class="project-btn">
-        <a  matButton="outlined" class="button-transparent">GitHub</a>
-        <a  matButton="outlined" class="button-transparent">Live Test</a>
+        <a href="{{ project.GitHub }}" matButton="outlined" class="button-transparent" target="_blank">GitHub</a>
+        <a href="{{ project.link }}" matButton="outlined" class="button-transparent" target="_blank">Live Test</a>
       </div>
     </div>
 

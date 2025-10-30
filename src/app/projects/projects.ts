@@ -19,17 +19,23 @@ export class Projects {
       name: "Join",
       description: "Join is a web-based Kanban tool with an integrated contact list that enables efficient task and team management. It is built using modern web technologies and uses Firebase as the backend for authentication, database, and real-time synchronization." +
         "",
-      image: "assets/img/projects/join.png"
+      image: "assets/img/projects/join.png",
+      link: "https://kevin-fischer.dev/Join",
+      GitHub: "https://github.com/KevinFi92/Join"
     },
     {
       name: "El-Pollo-Loco",
       description: "El Pollo Loco is a 2D jump ’n’ run game developed in JavaScript, with a focus on object-oriented programming. Help Pepe defeat the crazy chicken!",
-      image: "assets/img/projects/el_pollo_loco.png"
+      image: "assets/img/projects/el_pollo_loco.png",
+      link: "https://kevin-fischer.dev/El-Pollo-Loco",
+      GitHub: "https://github.com/KevinFi92/El-Pollo-Loco"
     },
     {
       name: "DABubble",
       description: "This Project is a slack/discord Clone made with Angular.",
-      image: "assets/img/myLogo.png"
+      image: "assets/img/myLogo.png",
+      link: "",
+      GitHub: ""
     }
   ]
 

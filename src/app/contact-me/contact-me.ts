@@ -30,7 +30,7 @@ export class ContactMe {
   constructor(private highlightStore: HighlightStore) {
     merge(this.email.statusChanges, this.email.valueChanges)
       .pipe(takeUntilDestroyed())
-      .subscribe(() => this.updateErrorMessage());
+      .subscribe(() => this.updateErrorMessage(''));
 
     effect(() => {
       if (this.highlightStore.highlightEmail()) {
@@ -49,9 +49,10 @@ export class ContactMe {
     }
   }
 
-  updateErrorMessage() {
+  updateErrorMessage(text: string) {
+
     if (this.email.hasError('required')) {
-      this.errorMessage.set('You must enter a value');
+      this.errorMessage.set('You must enter a' + text);
     } else if (this.email.hasError('email')) {
       this.errorMessage.set('Not a valid email');
     } else {
