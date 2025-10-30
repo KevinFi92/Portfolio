@@ -12,8 +12,8 @@ export const routes: Routes = [
   imports: [
     RouterModule.forRoot(routes, {
       scrollPositionRestoration: 'enabled',
-      anchorScrolling: 'enabled', // 👈 wichtig!
-      scrollOffset: [0, 80], // optional: damit dein Header nichts überlappt
+      anchorScrolling: 'enabled',
+      scrollOffset: [0, 80],
     }),
   ],
   exports: [RouterModule],
