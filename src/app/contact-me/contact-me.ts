@@ -27,10 +27,12 @@ export class ContactMe {
 
   errorMessage = signal('');
 
+
+
   constructor(private highlightStore: HighlightStore) {
     merge(this.email.statusChanges, this.email.valueChanges)
       .pipe(takeUntilDestroyed())
-      .subscribe(() => this.updateErrorMessage(''));
+      .subscribe(() => this.updateErrorMessage());
 
     effect(() => {
       if (this.highlightStore.highlightEmail()) {
@@ -48,11 +50,11 @@ export class ContactMe {
       setTimeout(() => form.classList.remove('highlight'), 1000);
     }
   }
-
-  updateErrorMessage(text: string) {
+//TODO: make ErrorMessage work for all form fields
+  updateErrorMessage() {
 
     if (this.email.hasError('required')) {
-      this.errorMessage.set('You must enter a' + text);
+      this.errorMessage.set('You must enter a value');
     } else if (this.email.hasError('email')) {
       this.errorMessage.set('Not a valid email');
     } else {
@@ -80,7 +82,7 @@ export class ContactMe {
     },
   };
 
-
+//TODO: email is not working, don´t know why yet :D
   onSubmit(ngForm: NgForm) {
     if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))

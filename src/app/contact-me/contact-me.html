@@ -19,7 +19,7 @@
         name="email"
         matInput
         placeholder="pat@example.com"
-        (blur)="updateErrorMessage('email')"
+        (blur)="updateErrorMessage()"
         required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
         #email="ngModel"
       />

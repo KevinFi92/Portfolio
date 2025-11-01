@@ -20,6 +20,17 @@ swiper-slide {
   @include flex-box(row, center, center);
 }
 
+@media screen and (max-width: 900px)  and (orientation: landscape) {
+  swiper-container::part(pagination-bullet) {
+display: none !important;
+  }
+}
+@media screen and (max-height: 430px) and (orientation: landscape) {
+  .projects {
+    margin: 100px 30px 0 30px;
+
+  }
+}
 @media screen and (max-width: 550px) {
   h1 {
     font-size: 38px;

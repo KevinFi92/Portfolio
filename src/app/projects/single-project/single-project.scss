@@ -78,7 +78,7 @@
 @media screen and (max-width: 920px) {
   .project-info {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
 
     > img {
       width: 80% !important;
@@ -95,7 +95,40 @@
   }
 }
 
+@media screen and (max-width: 900px) and (orientation: landscape) {
+  .single-project {
+    height: 75vh;
+  }
+}
+
+@media screen and (max-height: 430px) and (orientation: landscape) {
+  .single-project {
+    height: 76vh;
+  }
+  .project-info {
+    @include flex-box(row, center, center);
+  }
+
+  .project-txt {
+    > h1 {
+      font-size: 38px;
+    }
+
+    > p {
+      font-size: 16px;
+    }
+  }
+
+  .project-img {
+    height: 95%;
+  }
+}
+
 @media screen and (max-width: 550px) {
+  .project-info {
+    align-items: flex-start;
+  }
+
   .project-txt {
     > h1 {
       font-size: 38px;
@@ -134,5 +167,6 @@
     width: 75vw !important;
   }
 }
+
 
 
