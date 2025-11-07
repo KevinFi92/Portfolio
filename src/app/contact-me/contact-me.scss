@@ -30,7 +30,8 @@ font-size: 48px;
 }
 @media screen and (max-height: 430px) and (orientation: landscape) {
   .contact-dialog {
-    margin-top: 150px;
+    margin-top: 400px;
+    height: 100vh;
   }
 }
 @media screen and (max-width: 450px) {

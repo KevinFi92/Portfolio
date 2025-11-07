@@ -61,3 +61,8 @@ footer {
     }
   }
 }
+@media screen and (max-height: 430px) and (orientation: landscape) {
+  footer {
+    margin: 250px 50px 0 50px;
+  }
+}
