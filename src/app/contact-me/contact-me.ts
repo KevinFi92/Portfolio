@@ -10,11 +10,13 @@ import {MatButton} from '@angular/material/button';
 import {FormsModule} from '@angular/forms';
 import {HttpClient} from '@angular/common/http';
 import {HighlightStore} from '../shared/highlight.store';
+import {snackbar} from './snackbar/snackbar';
+import {MatSnackBarRef} from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-contact-me',
   imports: [MatFormFieldModule, MatInputModule, MatSelectModule, MatDialogModule, ReactiveFormsModule, MatButton,
-    FormsModule],
+    FormsModule, snackbar],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './contact-me.html',
   styleUrl: './contact-me.scss'
@@ -25,8 +27,8 @@ export class ContactMe {
   readonly email = new FormControl('', [Validators.required, Validators.email]);
   http = inject(HttpClient);
 
-  errorMessage = signal('');
 
+  errorMessage = signal('');
 
 
   constructor(private highlightStore: HighlightStore) {
@@ -50,6 +52,7 @@ export class ContactMe {
       setTimeout(() => form.classList.remove('highlight'), 1000);
     }
   }
+
 //TODO: make ErrorMessage work for all form fields
   updateErrorMessage() {
 
@@ -69,10 +72,8 @@ export class ContactMe {
   }
 
 
-  mailTest = true;
-
   post = {
-    endPoint: 'https://deineDomain.de/sendMail.php',
+    endPoint: 'https://kevin-fischer.dev/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
@@ -82,9 +83,9 @@ export class ContactMe {
     },
   };
 
-//TODO: email is not working, don´t know why yet :D
+
   onSubmit(ngForm: NgForm) {
-    if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
+    if (ngForm.submitted && ngForm.form.valid) {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
@@ -96,10 +97,10 @@ export class ContactMe {
           },
           complete: () => console.info('send post complete'),
         });
-    } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
+    } else if (ngForm.submitted && ngForm.form.valid) {
 
       ngForm.resetForm();
     }
-
   }
+
 }
