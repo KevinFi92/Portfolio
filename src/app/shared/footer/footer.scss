@@ -24,6 +24,10 @@ footer {
     > a {
       text-decoration: none;
       color: white;
+
+      &:hover {
+        color: rgb(0, 215, 254);
+      }
     }
   }
 
@@ -61,6 +65,7 @@ footer {
     }
   }
 }
+
 @media screen and (max-height: 430px) and (orientation: landscape) {
   footer {
     margin: 250px 50px 0 50px;

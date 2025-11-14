@@ -9,7 +9,7 @@
              placeholder="Firstname Lastname" name="name"
              #name="ngModel">
       @if (name.invalid) {
-        <mat-error>{{ errorMessage() }}</mat-error>
+        <mat-error>{{ errorName() }}</mat-error>
       }
     </mat-form-field>
     <mat-form-field class="form-field">
@@ -24,12 +24,15 @@
         #email="ngModel"
       />
       @if (email.invalid) {
-        <mat-error>{{ errorMessage() }}</mat-error>
+        <mat-error>{{ errorEmail() }}</mat-error>
       }
     </mat-form-field>
     <mat-form-field class="form-field" style="height: 250px">
       <mat-label>Textarea</mat-label>
       <textarea [(ngModel)]="contactData.message" name="message" matInput required></textarea>
+      @if (name.invalid) {
+        <mat-error>{{ errorText() }}</mat-error>
+      }
     </mat-form-field>
     <button type="submit" matButton="outlined" class="button-transparent">Message Me</button>
   </form>

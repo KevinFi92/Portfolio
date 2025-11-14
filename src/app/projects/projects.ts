@@ -1,6 +1,5 @@
 import {Component, CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
 import {SingleProject} from './single-project/single-project';
-import { Swiper } from 'swiper/types';
 import { register } from 'swiper/element/bundle';
 
 register();
@@ -32,10 +31,10 @@ export class Projects {
     },
     {
       name: "DABubble",
-      description: "This Project is a slack/discord Clone made with Angular.",
+      description: "This Project will be a slack/discord Clone made with Angular. Work in progress...",
       image: "assets/img/myLogo.png",
-      link: "",
-      GitHub: ""
+      link: "https://kevin-fischer.dev/#projects",
+      GitHub: "https://github.com/KevinFi92"
     }
   ]
 

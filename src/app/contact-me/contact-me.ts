@@ -24,11 +24,16 @@ import {MatSnackBarRef} from '@angular/material/snack-bar';
 export class ContactMe {
   @ViewChild('emailInput') emailInput!: ElementRef<HTMLInputElement>;
   @ViewChild('contactForm') contactForm!: ElementRef<HTMLInputElement>;
+  @ViewChild(snackbar) snackbarComponent!: snackbar;
   readonly email = new FormControl('', [Validators.required, Validators.email]);
+  readonly name = new FormControl('', [Validators.required, Validators.email]);
+  readonly text = new FormControl('', [Validators.required, Validators.email]);
   http = inject(HttpClient);
 
 
-  errorMessage = signal('');
+  errorEmail = signal('');
+  errorName = signal('');
+  errorText = signal('');
 
 
   constructor(private highlightStore: HighlightStore) {
@@ -57,11 +62,11 @@ export class ContactMe {
   updateErrorMessage() {
 
     if (this.email.hasError('required')) {
-      this.errorMessage.set('You must enter a value');
-    } else if (this.email.hasError('email')) {
-      this.errorMessage.set('Not a valid email');
-    } else {
-      this.errorMessage.set('');
+      this.errorEmail.set('You must enter a valid email address');
+    } if (this.name.hasError('required')) {
+      this.errorName.set('You must enter a Fullname');
+    } if (this.text.hasError('required')) {
+      this.errorText.set('You must enter a message');
     }
   }
 
@@ -89,17 +94,17 @@ export class ContactMe {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
-
+            this.snackbarComponent.openSuccess();
             ngForm.resetForm();
           },
           error: (error) => {
             console.error(error);
+            this.snackbarComponent.openError();
           },
           complete: () => console.info('send post complete'),
         });
-    } else if (ngForm.submitted && ngForm.form.valid) {
-
-      ngForm.resetForm();
+    } else if (ngForm.submitted && !ngForm.form.valid) {
+      this.snackbarComponent.openError();
     }
   }
 

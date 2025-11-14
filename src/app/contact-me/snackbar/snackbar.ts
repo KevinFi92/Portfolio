@@ -15,10 +15,16 @@ import {ContactMe} from '../contact-me';
 export class snackbar {
   private snackbar = inject(MatSnackBar);
 
-  durationInSeconds = 1;
+  durationInSeconds = 2.5;
 
-  openSnackBar() {
-    this.snackbar.openFromComponent(ContactMe, {
+  openSuccess() {
+    this.snackbar.open('email sent', 'Close', {
+      duration: this.durationInSeconds * 1000,
+    });
+  }
+
+  openError() {
+    this.snackbar.open('something went wrong', 'Close', {
       duration: this.durationInSeconds * 1000,
     });
   }

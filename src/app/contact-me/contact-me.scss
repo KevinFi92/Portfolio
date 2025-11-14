@@ -1,39 +1,43 @@
 @import '../../../public/assets/mixin/mixin';
 
-.contact-dialog{
+.contact-dialog {
   margin: 0 50px 0 50px;
   height: 80vh;
 }
 
 h1 {
-font-size: 48px;
+  font-size: 48px;
 }
 
 .contact-form {
   @include flex-box(column, center, center);
   margin-top: 200px;
- }
+  gap: 10px;
+}
 
-//is added to highlight the contact form
+
 .highlight {
   box-shadow: 0 0 10px rgb(0, 215, 254);
   transition: outline 0.3s ease;
 }
 
-.form-field{
+.form-field {
   width: 400px;
 }
-@media screen and (max-width: 900px)  and (orientation: landscape) {
+
+@media screen and (max-width: 900px) and (orientation: landscape) {
   .contact-form {
     margin-top: 100px;
   }
 }
+
 @media screen and (max-height: 430px) and (orientation: landscape) {
   .contact-dialog {
     margin-top: 400px;
     height: 100vh;
   }
 }
+
 @media screen and (max-width: 450px) {
   .contact-dialog {
     margin: 0 30px 0 30px;
@@ -42,7 +46,7 @@ font-size: 48px;
   h1 {
     font-size: 38px;
   }
-  .form-field{
+  .form-field {
     width: 350px;
   }
 }
@@ -52,7 +56,8 @@ font-size: 48px;
   h1 {
     font-size: 32px;
   }
-  .form-field{
+  .form-field {
     width: 300px;
   }
 }
+
