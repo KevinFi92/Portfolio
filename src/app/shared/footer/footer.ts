@@ -1,4 +1,4 @@
-import { Component, ViewChild, ElementRef } from '@angular/core';
+import { Component } from '@angular/core';
 import { HighlightStore } from '../highlight.store';
 import {Menu} from '../menu/menu';
 import {RouterLink} from '@angular/router';

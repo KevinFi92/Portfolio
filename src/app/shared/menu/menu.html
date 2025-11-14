@@ -1,4 +1,6 @@
-<button class="menu-btn" matButton [matMenuTriggerFor]="menu"><mat-icon class="mat-icon">more_vert</mat-icon></button>
+<button class="menu-btn" matButton [matMenuTriggerFor]="menu">
+  <mat-icon class="mat-icon">more_vert</mat-icon>
+</button>
 <mat-menu #menu="matMenu">
   @for (link of links; track link.name) {
     @if (link.isAction) {
@@ -10,7 +12,7 @@
     @if (link.isSection) {
       <a mat-menu-item routerLink="/" fragment="{{ link.link }}">{{ link.name }}</a>
     }
-    @if (link.isRoute){
+    @if (link.isRoute) {
       <a mat-menu-item routerLink="">{{ link.name }}</a>
     }
   }

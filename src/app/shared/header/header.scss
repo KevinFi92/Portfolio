@@ -4,16 +4,16 @@ header {
   @include flex-box(row, center, space-between);
   padding: 0 50px 0 50px;
   background-image: linear-gradient(to right, rgb(16, 20, 20), rgb(1, 115, 240));
+
   > img {
     height: 80px;
     width: 80px;
   }
 }
 
-.menu{
+.menu {
   display: none;
 }
-
 
 
 a {
@@ -31,16 +31,16 @@ a {
 }
 
 @media screen and (max-width: 600px) {
-  a{
+  a {
     font-size: 20px;
   }
 }
 
 @media screen and (max-width: 560px) {
-  .links{
+  .links {
     display: none;
   }
-  .menu{
+  .menu {
     display: block;
   }
 }

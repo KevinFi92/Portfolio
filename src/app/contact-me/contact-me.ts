@@ -11,7 +11,7 @@ import {FormsModule} from '@angular/forms';
 import {HttpClient} from '@angular/common/http';
 import {HighlightStore} from '../shared/highlight.store';
 import {snackbar} from './snackbar/snackbar';
-import {MatSnackBarRef} from '@angular/material/snack-bar';
+
 
 @Component({
   selector: 'app-contact-me',
@@ -63,9 +63,11 @@ export class ContactMe {
 
     if (this.email.hasError('required')) {
       this.errorEmail.set('You must enter a valid email address');
-    } if (this.name.hasError('required')) {
+    }
+    if (this.name.hasError('required')) {
       this.errorName.set('You must enter a Fullname');
-    } if (this.text.hasError('required')) {
+    }
+    if (this.text.hasError('required')) {
       this.errorText.set('You must enter a message');
     }
   }

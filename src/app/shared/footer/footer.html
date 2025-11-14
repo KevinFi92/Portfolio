@@ -1,14 +1,14 @@
 <footer>
-  <img src="/assets/img/myLogo.png">
+  <img src="/assets/img/myLogo.png" alt="">
   <div class="info">
     <p>© Kevin Fischer 2025</p>
     <p><a routerLink="/legal-notice">Legal Notice</a></p>
   </div>
   <div class="social-media">
-    <a><img (click)="onEmailClick()" src="/assets/img/email_button.png"></a>
-    <a href="https://github.com/KevinFi92" target="_blank"><img src="/assets/img/github_button.png"></a>
+    <a><img (click)="onEmailClick()" src="/assets/img/email_button.png" alt="move to Form field"></a>
+    <a href="https://github.com/KevinFi92" target="_blank"><img src="/assets/img/github_button.png" alt="open GitHub"></a>
     <a href="https://www.linkedin.com/in/kevin-fischer-39a6b734a/" target="_blank"><img
-      src="/assets/img/linkedin_button.png"></a>
+      src="/assets/img/linkedin_button.png" alt="open LinkedIn"></a>
   </div>
   <app-menu class="menu" [links]="links" (linkClick)="handleLinkClick($event)"></app-menu>
 </footer>
