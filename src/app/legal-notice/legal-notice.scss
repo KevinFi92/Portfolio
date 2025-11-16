@@ -1,6 +1,7 @@
 @import '../../../public/assets/mixin/mixin';
 
 .impressum {
+  @include flex-box(row, center, center);
   margin: 0;
   font-size: 24px;
   padding-left: 50px;
@@ -11,7 +12,6 @@
 }
 
 .content{
-  @include flex-box(column, center, center);
   max-width: 1920px;
 }
 
