@@ -6,14 +6,17 @@ h1 {
 }
 
 .skills {
+  @include flex-box(column, center, center);
   margin: 0 50px 0 50px;
   height: 100vh;
+
 }
 
 .skill-content {
   @include flex-box(row, center, center);
   margin-top: 100px;
   height: 80%;
+  max-width: 1920px;
 }
 
 .skills-txt {
@@ -39,7 +42,11 @@ h1 {
   @include flex-box(row, center, flex-end);
   margin-top: 50px;
 }
-
+@media screen and (max-width: 1385px) {
+  .skill-icons {
+    grid-template-columns: repeat(5, 50px);
+  }
+}
 @media screen and (max-width: 1024px) {
   .skill-content {
     @include flex-box(column, center, center);
@@ -70,7 +77,7 @@ h1 {
   }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 670px) {
   .skill-icons {
     > img {
       height: 80px;

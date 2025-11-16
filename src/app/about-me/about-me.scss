@@ -1,17 +1,20 @@
 @import '../../../public/assets/mixin/mixin';
 
 .about-me {
+  @include flex-box(column, center, center);
   margin: 100px 50px 0 50px;
   height: 100vh;
   scroll-margin-top: 80px;
+
 }
 
 .about-me-content {
   @include flex-box(column, center, center);
-  width: 80vw;
+  margin-top: 100px;
   height: 100vh;
   font-size: 28px;
   line-height: 1.2;
+  max-width: 1920px;
 }
 
 h1 {

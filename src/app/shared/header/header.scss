@@ -1,10 +1,15 @@
 @import '../../../../public/assets/mixin/mixin';
 
 header {
-  @include flex-box(row, center, space-between);
+  @include flex-box(row, center, center);
   padding: 0 50px 0 50px;
   background-image: linear-gradient(to right, rgb(16, 20, 20), rgb(1, 115, 240));
 
+}
+.content{
+  @include flex-box(row, center, space-between);
+  width: 100%;
+  max-width: 1920px;
   > img {
     height: 80px;
     width: 80px;

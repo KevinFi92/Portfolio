@@ -1,9 +1,15 @@
-@import '../../../../public/assets/mixin/mixin';
+
 
 footer {
-  @include flex-box(row, center, space-between);
+  @include flex-box(row, center, center);
   margin: 0 50px 0 50px;
 
+}
+
+.content {
+  @include flex-box(row, center, space-between);
+  width: 100%;
+  max-width: 1920px;
   > img {
     height: 80px;
     width: 80px;

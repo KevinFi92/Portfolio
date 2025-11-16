@@ -21,6 +21,11 @@ h2 {
 
 }
 
+.landing-page-content {
+  @include flex-box(column, center, center);
+  max-width: 1920px;
+}
+
 .button-container {
   @include flex-box(row, center);
   gap: 60px;
