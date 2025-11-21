@@ -39,14 +39,16 @@ h1 {
 }
 
 .contact-btn {
-  @include flex-box(row, center, flex-end);
+  @include flex-box(row, center, flex-start);
   margin-top: 50px;
 }
+
 @media screen and (max-width: 1385px) {
   .skill-icons {
     grid-template-columns: repeat(5, 50px);
   }
 }
+
 @media screen and (max-width: 1024px) {
   .skill-content {
     @include flex-box(column, center, center);

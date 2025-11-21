@@ -1,16 +1,18 @@
 @import '../../../public/assets/mixin/mixin';
 
 .projects {
-
-  height: 100vh;
+  @include flex-box(column, center, center);
   margin: 0 50px 0 50px;
+  height: 100vh;
   scroll-margin-top: 80px;
 
 }
 
-projects-content {
+.projects-content {
   max-width: 1920px;
   @include flex-box(column, center, center);
+  height: 100%;
+  width: 100%;
 }
 
 h1 {
@@ -20,6 +22,7 @@ h1 {
 
 swiper-container {
   height: 80%;
+  width: 90%;
 }
 
 swiper-slide {
@@ -27,8 +30,14 @@ swiper-slide {
   @include flex-box(row, center, center);
 }
 
+swiper-container::part(bullet) {
+  background-color: white !important;
+}
+
+
+
 @media screen and (max-width: 900px) and (orientation: landscape) {
-  swiper-container::part(pagination-bullet) {
+  swiper-container::part(bullet) {
     display: none !important;
   }
 }
@@ -56,7 +65,7 @@ swiper-slide {
   }
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 770px) {
   swiper-container::part(button-next),
   swiper-container::part(button-prev) {
     display: none !important;
@@ -70,7 +79,5 @@ swiper-slide {
   }
 }
 
-@media screen and (max-width: 340px) {
 
-}
 

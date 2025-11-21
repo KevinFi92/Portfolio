@@ -10,6 +10,7 @@ footer {
   @include flex-box(row, center, space-between);
   width: 100%;
   max-width: 1920px;
+
   > img {
     height: 80px;
     width: 80px;
@@ -43,14 +44,19 @@ footer {
   gap: 20px;
   display: flex;
 
+
   > a {
     cursor: pointer;
-    border-radius: 15px;
+    border-radius: 30px;
 
+
+
+    > img {
+      height: 30px;
+      width: 30px;
+    }
     &:hover {
       scale: 1.3;
-      box-shadow: 0 0 10px rgb(0, 215, 254);
-
     }
   }
 }

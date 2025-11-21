@@ -58,7 +58,7 @@ export class ContactMe {
     }
   }
 
-//TODO: make ErrorMessage work for all form fields
+
   updateErrorMessage() {
 
     if (this.email.hasError('required')) {

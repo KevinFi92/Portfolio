@@ -39,3 +39,8 @@ export class Projects {
   ]
 
 }
+
+
+//TODO:
+// 2. The thumbnail images look stretched. If they don’t work well with your layout,
+// I recommend taking screenshots of the parts you programmed yourself.

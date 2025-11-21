@@ -16,18 +16,36 @@ header {
   }
 }
 
+.links {
+  display: flex;
+  gap: 20px;
+}
+
 .menu {
   display: none;
 }
 
 
 a {
-  color: white !important;
+  position: relative;
+  text-decoration: none;
+  color: inherit;
   font-size: 24px;
-  padding-left: 20px;
 
-  &:hover {
-    color: rgb(0, 215, 254) !important;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;     // Abstand zum Text
+    width: 0;
+    height: 2px;      // Dicke der Linie
+    background-color: currentColor;
+    transition: width 0.3s ease;
+  }
+
+  &:hover::after {
+    width: 100%;
   }
 
   &:active {
