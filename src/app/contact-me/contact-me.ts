@@ -11,12 +11,13 @@ import {FormsModule} from '@angular/forms';
 import {HttpClient} from '@angular/common/http';
 import {HighlightStore} from '../shared/highlight.store';
 import {snackbar} from './snackbar/snackbar';
+import {MatCheckbox} from '@angular/material/checkbox';
 
 
 @Component({
   selector: 'app-contact-me',
   imports: [MatFormFieldModule, MatInputModule, MatSelectModule, MatDialogModule, ReactiveFormsModule, MatButton,
-    FormsModule, snackbar],
+    FormsModule, snackbar, MatCheckbox],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './contact-me.html',
   styleUrl: './contact-me.scss'
@@ -35,6 +36,7 @@ export class ContactMe {
   errorName = signal('');
   errorText = signal('');
 
+  privacyAccepted = false;
 
   constructor(private highlightStore: HighlightStore) {
     merge(this.email.statusChanges, this.email.valueChanges)
