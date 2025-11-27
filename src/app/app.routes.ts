@@ -1,12 +1,15 @@
 import {RouterModule, Routes} from '@angular/router';
-import { LegalNotice } from './legal-notice/legal-notice'
-import { MainPage } from './main-page/main-page';
+import {LegalNotice} from './legal-notice/legal-notice'
+import {MainPage} from './main-page/main-page';
 import {NgModule} from '@angular/core';
+import {PrivacyPolicy} from './privacy-policy/privacy-policy';
 
 
 export const routes: Routes = [
-  { path: '', component: MainPage },
-  { path: 'legal-notice', component: LegalNotice }];
+  {path: '', component: MainPage},
+  {path: 'legal-notice', component: LegalNotice},
+  {path: 'privacy-policy', component: PrivacyPolicy}];
+
 
 @NgModule({
   imports: [
@@ -18,4 +21,5 @@ export const routes: Routes = [
   ],
   exports: [RouterModule],
 })
-export class AppRoutingModule {}
+export class AppRoutingModule {
+}

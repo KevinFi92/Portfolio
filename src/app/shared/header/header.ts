@@ -36,6 +36,3 @@ export class Header {
   ]
 }
 
-
-//TODO:
-// 2.We recommend adding a language toggle with a German translation.
