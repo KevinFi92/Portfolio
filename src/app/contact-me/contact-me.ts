@@ -62,7 +62,6 @@ export class ContactMe {
 
 
   updateErrorMessage() {
-
     if (this.email.hasError('required')) {
       this.errorEmail.set('You must enter a valid email address');
     }
@@ -111,5 +110,5 @@ export class ContactMe {
       this.snackbarComponent.openError();
     }
   }
-
 }
+

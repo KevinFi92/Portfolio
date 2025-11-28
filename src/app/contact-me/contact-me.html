@@ -39,7 +39,7 @@
       }
     </mat-form-field>
     <mat-checkbox (change)="privacyAccepted = $event.checked">I´ve read the privacy policy and agree to the processing of my data as outlined </mat-checkbox>
-    <button type="submit" matButton="outlined" class="button-transparent" [disabled]="!privacyAccepted">Message Me</button>
+    <button type="submit" matButton="outlined" class="button-transparent" [disabled]="contactForm.invalid || !privacyAccepted">Message Me</button>
   </form>
   <app-snackbar></app-snackbar>
   </div>

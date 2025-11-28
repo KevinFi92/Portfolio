@@ -2,14 +2,17 @@
 
 header {
   @include flex-box(row, center, center);
-  padding: 0 50px 0 50px;
+
   background-image: linear-gradient(to right, rgb(16, 20, 20), rgb(1, 115, 240));
 
 }
-.content{
+
+.content {
   @include flex-box(row, center, space-between);
-  width: 100%;
   max-width: 1920px;
+  width: 100%;
+  padding: 0 50px;
+
   > img {
     height: 80px;
     width: 80px;
@@ -37,9 +40,9 @@ a {
     content: "";
     position: absolute;
     left: 0;
-    bottom: -8px;     // Abstand zum Text
+    bottom: -8px; // Abstand zum Text
     width: 0;
-    height: 2px;      // Dicke der Linie
+    height: 2px; // Dicke der Linie
     background-color: currentColor;
     transition: width 0.3s ease;
   }
@@ -65,6 +68,10 @@ a {
   }
   .menu {
     display: block;
+  }
+
+  .content {
+    padding: 0 10px;
   }
 }
 
