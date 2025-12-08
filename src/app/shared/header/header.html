@@ -3,6 +3,8 @@
   <img src="assets/img/myLogo.png" alt="logo">
   <app-menu [links]="links" class="menu"></app-menu>
   <div class="links">
+    <button (click)="switchLang('en')">EN</button>
+    <button (click)="switchLang('de')">DE</button>
     <a routerLink="">Home</a>
     <a routerLink="/" fragment="about-me">About Me</a>
     <a routerLink="/" fragment="projects">Projects</a>
