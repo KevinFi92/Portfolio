@@ -1,0 +1,72 @@
+{
+  "NAV": {
+    "HOME": "Home",
+    "ABOUT": "About Me",
+    "PROJECTS": "Projekte",
+    "CONTACT": "Contact"
+  },
+
+  "HERO": {
+    "TITLE": "Frontend Developer",
+    "SUBTITLE": "Welcome on my Portfolio, nice to see you here!",
+    "BUTTON_PRO": "My Projects",
+    "BUTTON_CON": "Contact Me"
+  },
+
+  "ABOUT": {
+    "TITLE": "< about me >",
+    "TEXT_1":[ "Hi, I am Kevin. I started my journey as a web developer in 2024.",
+    "Since than I have been building and refining my skills.",
+    "I like solving problems as part of a team and constantly learning new technologies.",
+    "Over time, I’ve developed a solid foundation in HTML, CSS, JavaScript and TypeScript and I’m comfortable working with modern frameworks like Angular.",
+    "I also have experience with version control systems like Git and REST-API integration."],
+    "ICON_1": "based in cologne",
+    "ICON_2": "open to work remote",
+    "ICON_3": "willing to learn"
+  },
+
+  "SKILLS": {
+    "TITLE": "< skills >",
+    "INTRO": ["These are some of the skills I’ve already gained on my journey so far.",
+    "Don’t see the skill you’re looking for? Challenge me!",
+    "I really enjoy exploring new technologies and I’m always excited to take on fresh challenges.<br>",
+    "Contact me by clicking the button below."],
+    "BUTTON": "Contact Me"
+  },
+
+  "PROJECTS": {
+    "TITLE": "< projects >",
+    "ITEMS": {
+      "PROJECT_1": {
+        "DESCRIPTION": "Join is a web-based Kanban tool with an integrated contact list that enables efficient task and team management. It is built using modern web technologies and uses Firebase as the backend for authentication, database, and real-time synchronization."
+      },
+      "PROJECT_2": {
+        "DESCRIPTION": "El Pollo Loco is a 2D jump ’n’ run game developed in JavaScript, with a focus on object-oriented programming. Help Pepe defeat the crazy chicken!"
+      },
+      "PROJECT_3": {
+        "DESCRIPTION": "This Project will be a slack/discord Clone made with Angular. Work in progress..."
+      }
+    }
+  },
+
+  "CONTACT": {
+    "TITLE": "< contact me >",
+    "FORM": {
+      "NAME_PH": "Firstname Lastname",
+      "EMAIL": "Enter your email",
+      "MESSAGE": "Textarea",
+      "CHECKBOX": "I´ve read the privacy policy and agree to the processing of my data as outlined",
+      "SEND_BUTTON": "Message Me",
+      "SUCCESS": "",
+      "ERROR": ""
+    }
+  },
+
+  "FOOTER": {
+    "COPYRIGHT": "",
+    "LINKS": {
+      "IMPRINT": "Impressum",
+      "PRIVACY": "Datenschutzerklärung"
+    }
+  }
+}

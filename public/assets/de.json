@@ -1,0 +1,71 @@
+{
+  "NAV": {
+    "HOME": "Startseite",
+    "ABOUT": "Über mich",
+    "PROJECTS": "Projekte",
+    "CONTACT": "Kontakt"
+  },
+
+  "HERO": {
+    "TITLE": "Frontend Entwickler",
+    "SUBTITLE": "Willkommen auf meinem Portfolio, schön dass du hier bist!",
+    "BUTTON_PRO": "Meine Projekte",
+    "BUTTON_CON": "Kontakt"
+  },
+
+  "ABOUT": {
+    "TITLE": "Über mich",
+    "TEXT_1": ["Hi, ich bin Kevin. Ich habe meine Reise als Webentwickler im Jahr 2024 begonnen.",
+            "Seitdem baue ich meine Fähigkeiten stetig aus und verfeinere sie.",
+            "Ich arbeite gerne im Team, löse gemeinsam Probleme und lerne kontinuierlich neue Technologien kennen.",
+            "Mit der Zeit habe ich eine solide Grundlage in HTML, CSS, JavaScript und TypeScript entwickelt und arbeite sicher mit modernen Frameworks wie Angular.",
+            "Außerdem habe ich Erfahrung im Umgang mit Versionsverwaltungssystemen wie Git sowie in der Integration von REST-APIs."],
+    "ICON_1": "lebe in Köln",
+    "ICON_2": "Offen für Remote-Arbeit",
+    "ICON_3": "lernbereit"
+  },
+
+  "SKILLS": {
+    "TITLE": "Erfahrungen",
+    "INTRO": ["Das sind einige der Fähigkeiten, die ich bisher auf meinem Weg gesammelt habe.",
+            "Du suchst nach einer bestimmten Fähigkeit, die hier fehlt? Dann stell mich auf die Probe!",
+            "Ich liebe es, neue Technologien auszuprobieren, und freue mich immer auf spannende Herausforderungen.",
+            "Schreib mir einfach, indem du auf den Button unten klickst."],
+    "BUTTON": "kontaktiere mich"
+  },
+
+  "PROJECTS": {
+    "TITLE": "Projekte",
+    "ITEMS": {
+      "PROJECT_1": {
+        "DESCRIPTION": "Join ist ein webbasiertes Kanban-Tool mit integrierter Kontaktliste, das die Verwaltung von Aufgaben und Teams einfach und effizient macht. Es wurde mit modernen Webtechnologien entwickelt und verwendet Firebase für Authentifizierung, Datenbank und Echtzeit-Synchronisation"
+      },
+      "PROJECT_2": {
+        "DESCRIPTION": "El Pollo Loco ist ein mit JavaScript entwickeltes 2D jump n run spiel mit fokus auf Objekt orientierte Programmierung."
+      },
+      "PROJECT_3": {
+        "DESCRIPTION": "Dieses Projekt wird ein Slack/Discord Klon entwickelt mit Angular. Noch in arbeit..."
+      }
+    }
+  },
+
+  "CONTACT": {
+    "TITLE": "Kontakt",
+    "FORM": {
+      "NAME": "Vor und Nachname",
+      "EMAIL": "deine Email Adresse",
+      "MESSAGE": "Textfeld",
+      "SEND_BUTTON": "Nachricht senden",
+      "SUCCESS": "",
+      "ERROR": ""
+    }
+  },
+
+  "FOOTER": {
+    "COPYRIGHT": "",
+    "LINKS": {
+      "IMPRINT": "Impressum",
+      "PRIVACY": "Datenschutzerklärung"
+    }
+  }
+}
