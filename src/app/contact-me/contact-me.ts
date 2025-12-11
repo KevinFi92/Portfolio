@@ -12,12 +12,13 @@ import {HttpClient} from '@angular/common/http';
 import {HighlightStore} from '../shared/highlight.store';
 import {snackbar} from './snackbar/snackbar';
 import {MatCheckbox} from '@angular/material/checkbox';
+import {TranslatePipe} from '@ngx-translate/core';
 
 
 @Component({
   selector: 'app-contact-me',
   imports: [MatFormFieldModule, MatInputModule, MatSelectModule, MatDialogModule, ReactiveFormsModule, MatButton,
-    FormsModule, snackbar, MatCheckbox],
+    FormsModule, snackbar, MatCheckbox, TranslatePipe],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './contact-me.html',
   styleUrl: './contact-me.scss'

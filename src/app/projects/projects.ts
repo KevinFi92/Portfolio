@@ -1,40 +1,45 @@
 import {Component, CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
 import {SingleProject} from './single-project/single-project';
 import { register } from 'swiper/element/bundle';
+import {TranslatePipe} from '@ngx-translate/core';
+
 
 register();
 @Component({
   standalone: true,
   selector: 'app-projects',
-  imports: [SingleProject],
+  imports: [SingleProject, TranslatePipe],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   templateUrl: './projects.html',
   styleUrl: './projects.scss'
 })
 export class Projects {
 
+
   projects = [
     {
       name: "Join",
-      description: "Join is a web-based Kanban tool with an integrated contact list that enables efficient task and team management. It is built using modern web technologies and uses Firebase as the backend for authentication, database, and real-time synchronization." +
-        "",
+      description: "PROJECTS.ITEMS.PROJECT_1.DESCRIPTION",
       image: "assets/img/projects/join.png",
       link: "https://kevin-fischer.dev/Join",
-      GitHub: "https://github.com/KevinFi92/Join"
+      GitHub: "https://github.com/KevinFi92/Join",
+      inProgress: false
     },
     {
       name: "El-Pollo-Loco",
-      description: "El Pollo Loco is a 2D jump ’n’ run game developed in JavaScript, with a focus on object-oriented programming. Help Pepe defeat the crazy chicken!",
+      description: "PROJECTS.ITEMS.PROJECT_2.DESCRIPTION",
       image: "assets/img/projects/el_pollo_loco.png",
       link: "https://kevin-fischer.dev/El-Pollo-Loco",
-      GitHub: "https://github.com/KevinFi92/El-Pollo-Loco"
+      GitHub: "https://github.com/KevinFi92/El-Pollo-Loco",
+      inProgress: false
     },
     {
       name: "DABubble",
-      description: "This Project will be a slack/discord Clone made with Angular. Work in progress...",
+      description: "PROJECTS.ITEMS.PROJECT_3.DESCRIPTION",
       image: "assets/img/myLogo.png",
       link: "https://kevin-fischer.dev/#projects",
-      GitHub: "https://github.com/KevinFi92"
+      GitHub: "https://github.com/KevinFi92",
+      inProgress: true
     }
   ]
 

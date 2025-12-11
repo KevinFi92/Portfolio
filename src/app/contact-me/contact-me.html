@@ -1,46 +1,48 @@
 <section id="contact-dialog" class="contact-dialog">
   <div class="headline">
-    <h1>< contact me ></h1>
+    <h1>{{ 'CONTACT.TITLE' | translate }}</h1>
   </div>
 
   <div class="contact-content">
-  <form #contactForm="ngForm" class="contact-form" (ngSubmit)="onSubmit(contactForm)">
-    <mat-form-field class="form-field">
-      <mat-label>Name</mat-label>
-      <input [(ngModel)]="contactData.name" #emailInput matInput
-             required
-             pattern="^[A-Za-zÀ-ÖØ-öø-ÿÄÖÜäöüß'’\-]+(?: [A-Za-zÀ-ÖØ-öø-ÿÄÖÜäöüß'’\-]+)+$"
-             placeholder="Firstname Lastname" name="name"
-             #name="ngModel">
-      @if (name.invalid) {
-        <mat-error>{{ errorName() }}</mat-error>
-      }
-    </mat-form-field>
-    <mat-form-field class="form-field">
-      <mat-label>Enter your email</mat-label>
-      <input
-        [(ngModel)]="contactData.email"
-        name="email"
-        matInput
-        placeholder="pat@example.com"
-        (blur)="updateErrorMessage()"
-        required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
-        #email="ngModel"
-      />
-      @if (email.invalid) {
-        <mat-error>{{ errorEmail() }}</mat-error>
-      }
-    </mat-form-field>
-    <mat-form-field class="form-field" style="height: 250px">
-      <mat-label>Textarea</mat-label>
-      <textarea [(ngModel)]="contactData.message" name="message" matInput required></textarea>
-      @if (name.invalid) {
-        <mat-error>{{ errorText() }}</mat-error>
-      }
-    </mat-form-field>
-    <mat-checkbox (change)="privacyAccepted = $event.checked">I´ve read the privacy policy and agree to the processing of my data as outlined </mat-checkbox>
-    <button type="submit" matButton="outlined" class="button-transparent" [disabled]="contactForm.invalid || !privacyAccepted">Message Me</button>
-  </form>
-  <app-snackbar></app-snackbar>
+    <form #contactForm="ngForm" class="contact-form" (ngSubmit)="onSubmit(contactForm)">
+      <mat-form-field class="form-field">
+        <mat-label>Name</mat-label>
+        <input [(ngModel)]="contactData.name" #emailInput matInput
+               required
+               pattern="^[A-Za-zÀ-ÖØ-öø-ÿÄÖÜäöüß'’\-]+(?: [A-Za-zÀ-ÖØ-öø-ÿÄÖÜäöüß'’\-]+)+$"
+               placeholder="{{ 'CONTACT.FORM.NAME' | translate }}" name="name"
+               #name="ngModel">
+        @if (name.invalid) {
+          <mat-error>{{ errorName() }}</mat-error>
+        }
+      </mat-form-field>
+      <mat-form-field class="form-field">
+        <mat-label>{{ 'CONTACT.FORM.EMAIL' | translate }}</mat-label>
+        <input
+          [(ngModel)]="contactData.email"
+          name="email"
+          matInput
+          placeholder="pat@example.com"
+          (blur)="updateErrorMessage()"
+          required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+          #email="ngModel"
+        />
+        @if (email.invalid) {
+          <mat-error>{{ errorEmail() }}</mat-error>
+        }
+      </mat-form-field>
+      <mat-form-field class="form-field" style="height: 250px">
+        <mat-label>{{ 'CONTACT.FORM.MESSAGE' | translate }}</mat-label>
+        <textarea [(ngModel)]="contactData.message" name="message" matInput required></textarea>
+        @if (name.invalid) {
+          <mat-error>{{ errorText() }}</mat-error>
+        }
+      </mat-form-field>
+      <mat-checkbox (change)="privacyAccepted = $event.checked">{{ 'CONTACT.CHECKBOX' | translate }}</mat-checkbox>
+      <button type="submit" matButton="outlined" class="button-transparent"
+              [disabled]="contactForm.invalid || !privacyAccepted">{{ 'CONTACT.FORM.SEND_BUTTON' | translate }}
+      </button>
+    </form>
+    <app-snackbar></app-snackbar>
   </div>
 </section>

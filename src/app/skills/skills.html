@@ -1,15 +1,12 @@
 <section class="skills">
   <div class="headline">
-    <h1>< skills ></h1>
+    <h1>{{ 'SKILLS.TITLE' | translate }}</h1>
   </div>
   <div class="skill-content">
     <div #slideLeft  class="skills-txt slide-in-left">
-      These are some of the skills I’ve already gained on my journey so far.
-      Don’t see the skill you’re looking for? Challenge me!
-      I really enjoy exploring new technologies and I’m always excited to take on fresh challenges.<br>
-      Contact me by clicking the button below.
+      {{ 'SKILLS.TEXT_1' | translate }}{{ 'SKILLS.TEXT_2' | translate }}{{ 'SKILLS.TEXT_3' | translate }}{{ 'SKILLS.TEXT_4' | translate }}
       <div class="contact-btn">
-        <a matButton="outlined" href="#contact-dialog" class="button-transparent">Contact Me</a>
+        <a matButton="outlined" href="#contact-dialog" class="button-transparent">{{ 'SKILLS.BUTTON' | translate }}</a>
       </div>
     </div>
     <div #slideRight class="skill-icons slide-in-right">

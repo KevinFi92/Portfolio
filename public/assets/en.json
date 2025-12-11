@@ -5,35 +5,32 @@
     "PROJECTS": "Projekte",
     "CONTACT": "Contact"
   },
-
   "HERO": {
     "TITLE": "Frontend Developer",
     "SUBTITLE": "Welcome on my Portfolio, nice to see you here!",
     "BUTTON_PRO": "My Projects",
     "BUTTON_CON": "Contact Me"
   },
-
   "ABOUT": {
     "TITLE": "< about me >",
-    "TEXT_1":[ "Hi, I am Kevin. I started my journey as a web developer in 2024.",
-    "Since than I have been building and refining my skills.",
-    "I like solving problems as part of a team and constantly learning new technologies.",
-    "Over time, I’ve developed a solid foundation in HTML, CSS, JavaScript and TypeScript and I’m comfortable working with modern frameworks like Angular.",
-    "I also have experience with version control systems like Git and REST-API integration."],
+    "TEXT_1": "Hi, I am Kevin. I started my journey as a web developer in 2024.",
+    "TEXT_2":   "Since than I have been building and refining my skills.",
+    "TEXT_3":"I like solving problems as part of a team and constantly learning new technologies.",
+    "TEXT_4": "Over time, I’ve developed a solid foundation in HTML, CSS, JavaScript and TypeScript and I’m comfortable working with modern frameworks like Angular.",
+    "TEXT_5": "I also have experience with version control systems like Git and REST-API integration."
+    ,
     "ICON_1": "based in cologne",
     "ICON_2": "open to work remote",
     "ICON_3": "willing to learn"
   },
-
   "SKILLS": {
     "TITLE": "< skills >",
-    "INTRO": ["These are some of the skills I’ve already gained on my journey so far.",
-    "Don’t see the skill you’re looking for? Challenge me!",
-    "I really enjoy exploring new technologies and I’m always excited to take on fresh challenges.<br>",
-    "Contact me by clicking the button below."],
+    "TEXT_1": "These are some of the skills I’ve already gained on my journey so far.",
+    "TEXT_2": "Don’t see the skill you’re looking for? Challenge me!",
+    "TEXT_3": "I really enjoy exploring new technologies and I’m always excited to take on fresh challenges.",
+    "TEXT_4": "Contact me by clicking the button below.",
     "BUTTON": "Contact Me"
   },
-
   "PROJECTS": {
     "TITLE": "< projects >",
     "ITEMS": {
@@ -48,11 +45,11 @@
       }
     }
   },
-
   "CONTACT": {
     "TITLE": "< contact me >",
+    "CHECKBOX": "I´ve read the privacy policy and agree to the processing of my data as outlined",
     "FORM": {
-      "NAME_PH": "Firstname Lastname",
+      "NAME": "Firstname Lastname",
       "EMAIL": "Enter your email",
       "MESSAGE": "Textarea",
       "CHECKBOX": "I´ve read the privacy policy and agree to the processing of my data as outlined",
@@ -61,12 +58,11 @@
       "ERROR": ""
     }
   },
-
   "FOOTER": {
     "COPYRIGHT": "",
     "LINKS": {
-      "IMPRINT": "Impressum",
-      "PRIVACY": "Datenschutzerklärung"
+      "IMPRINT": "legal notice",
+      "PRIVACY": "privacy policy"
     }
   }
 }

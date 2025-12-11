@@ -3,10 +3,11 @@ import {MatButton} from '@angular/material/button';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
+import {TranslatePipe} from '@ngx-translate/core';
 
 @Component({
   selector: 'app-skills',
-  imports: [MatButton, MatDialogModule, MatFormFieldModule, MatInputModule],
+  imports: [MatButton, MatDialogModule, MatFormFieldModule, MatInputModule, TranslatePipe],
   templateUrl: './skills.html',
   styleUrl: './skills.scss'
 })

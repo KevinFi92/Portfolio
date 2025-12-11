@@ -5,37 +5,34 @@
     "PROJECTS": "Projekte",
     "CONTACT": "Kontakt"
   },
-
   "HERO": {
     "TITLE": "Frontend Entwickler",
     "SUBTITLE": "Willkommen auf meinem Portfolio, schön dass du hier bist!",
     "BUTTON_PRO": "Projekte",
     "BUTTON_CON": "Kontakt"
   },
-
   "ABOUT": {
-    "TITLE": "Über mich",
-    "TEXT_1": ["Hi, ich bin Kevin. Ich habe meine Reise als Webentwickler im Jahr 2024 begonnen.",
-            "Seitdem baue ich meine Fähigkeiten stetig aus und verfeinere sie.",
-            "Ich arbeite gerne im Team, löse gemeinsam Probleme und lerne kontinuierlich neue Technologien kennen.",
-            "Mit der Zeit habe ich eine solide Grundlage in HTML, CSS, JavaScript und TypeScript entwickelt und arbeite sicher mit modernen Frameworks wie Angular.",
-            "Außerdem habe ich Erfahrung im Umgang mit Versionsverwaltungssystemen wie Git sowie in der Integration von REST-APIs."],
-    "ICON_1": "lebe in Köln",
-    "ICON_2": "Offen für Remote-Arbeit",
+    "TITLE": "< Über mich >",
+    "TEXT_1": "Hi, ich bin Kevin. Ich habe meine Reise als Webentwickler im Jahr 2024 begonnen.",
+      "TEXT_2": "Seitdem baue ich meine Fähigkeiten stetig aus und verfeinere sie.",
+      "TEXT_3": "Ich arbeite gerne im Team, löse gemeinsam Probleme und lerne kontinuierlich neue Technologien kennen.",
+      "TEXT_4": "Mit der Zeit habe ich eine solide Grundlage in HTML, CSS, JavaScript und TypeScript entwickelt und arbeite sicher mit modernen Frameworks wie Angular.",
+      "TEXT_5":  "Außerdem habe ich Erfahrung im Umgang mit Versionsverwaltungssystemen wie Git sowie in der Integration von REST-APIs."
+    ,
+    "ICON_1": "aus Köln",
+    "ICON_2": "offen für Remote-Arbeit",
     "ICON_3": "lernbereit"
   },
-
   "SKILLS": {
-    "TITLE": "Erfahrungen",
-    "INTRO": ["Das sind einige der Fähigkeiten, die ich bisher auf meinem Weg gesammelt habe.",
-            "Du suchst nach einer bestimmten Fähigkeit, die hier fehlt? Dann stell mich auf die Probe!",
-            "Ich liebe es, neue Technologien auszuprobieren, und freue mich immer auf spannende Herausforderungen.",
-            "Schreib mir einfach, indem du auf den Button unten klickst."],
-    "BUTTON": "kontaktiere mich"
+    "TITLE": "< Erfahrungen >",
+    "TEXT_1": "Das sind einige der Fähigkeiten, die ich bisher auf meinem Weg gesammelt habe.",
+    "TEXT_2": "Du suchst nach einer bestimmten Fähigkeit, die hier fehlt? Dann stell mich auf die Probe!",
+    "TEXT_3": "Ich liebe es, neue Technologien auszuprobieren, und freue mich immer auf spannende Herausforderungen.",
+    "TEXT_4": "Schreib mir einfach, indem du auf den Button unten klickst.",
+    "BUTTON": "schreib mir"
   },
-
   "PROJECTS": {
-    "TITLE": "Projekte",
+    "TITLE": "< Projekte >",
     "ITEMS": {
       "PROJECT_1": {
         "DESCRIPTION": "Join ist ein webbasiertes Kanban-Tool mit integrierter Kontaktliste, das die Verwaltung von Aufgaben und Teams einfach und effizient macht. Es wurde mit modernen Webtechnologien entwickelt und verwendet Firebase für Authentifizierung, Datenbank und Echtzeit-Synchronisation"
@@ -48,9 +45,9 @@
       }
     }
   },
-
   "CONTACT": {
-    "TITLE": "Kontakt",
+    "TITLE": "< Kontakt >",
+    "CHECKBOX": "Ich habe die Datenschutzerklärung gelesen und stimme der darin beschriebenen Verarbeitung meiner Daten zu.",
     "FORM": {
       "NAME": "Vor und Nachname",
       "EMAIL": "deine Email Adresse",
@@ -60,7 +57,6 @@
       "ERROR": ""
     }
   },
-
   "FOOTER": {
     "COPYRIGHT": "",
     "LINKS": {
