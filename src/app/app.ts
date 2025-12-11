@@ -4,6 +4,7 @@ import { Footer } from './shared/footer/footer';
 import { Header } from './shared/header/header';
 import {MatDialogModule} from '@angular/material/dialog';
 import {filter} from 'rxjs';
+import {TranslateService} from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -13,7 +14,9 @@ import {filter} from 'rxjs';
 })
 export class App implements OnInit {
   protected readonly title = signal('portfolio');
-  constructor(private router: Router) {}
+  constructor(private router: Router, private translate: TranslateService) {
+    translate.use('en');
+  }
 
   ngOnInit(): void {
     this.router.events

@@ -3,12 +3,11 @@
   <img src="assets/img/myLogo.png" alt="logo">
   <app-menu [links]="links" class="menu"></app-menu>
   <div class="links">
-    <button (click)="switchLang('en')">EN</button>
-    <button (click)="switchLang('de')">DE</button>
-    <a routerLink="">Home</a>
-    <a routerLink="/" fragment="about-me">About Me</a>
-    <a routerLink="/" fragment="projects">Projects</a>
-    <a routerLink="/" fragment="contact-dialog">Contact</a>
+    <button class="lang" (click)="switchLang()"><img  src="{{ langIMG }}"></button>
+    <a routerLink="">{{ 'NAV.HOME' | translate}}</a>
+    <a routerLink="/" fragment="about-me">{{ 'NAV.ABOUT' | translate}}</a>
+    <a routerLink="/" fragment="projects">{{ 'NAV.PROJECTS' | translate}}</a>
+    <a routerLink="/" fragment="contact-dialog">{{ 'NAV.CONTACT' | translate}}</a>
   </div>
   </div>
 </header>
