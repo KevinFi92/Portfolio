@@ -4,7 +4,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatInputModule} from '@angular/material/input';
 import {FormsModule} from '@angular/forms';
 import {MatFormFieldModule} from '@angular/material/form-field';
-import {ContactMe} from '../contact-me';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-snackbar',
@@ -15,12 +15,22 @@ import {ContactMe} from '../contact-me';
 export class snackbar {
   private snackbar = inject(MatSnackBar);
 
+constructor(private translate: TranslateService) {
+}
   durationInSeconds = 2.5;
 
   openSuccess() {
-    this.snackbar.open('email sent', 'Close', {
-      duration: this.durationInSeconds * 1000,
-    });
+    this.translate
+      .get(['SNACKBAR.EMAIL_SENT', 'SNACKBAR.CLOSE'])
+      .subscribe(translations => {
+        this.snackbar.open(
+          translations['SNACKBAR.EMAIL_SENT'],
+          translations['SNACKBAR.CLOSE'],
+          {
+            duration: this.durationInSeconds * 1000,
+          }
+        );
+      });
   }
 
   openError() {

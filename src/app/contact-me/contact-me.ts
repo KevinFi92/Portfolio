@@ -90,7 +90,6 @@ export class ContactMe {
             ngForm.resetForm();
           },
           error: (error) => {
-            console.error(error);
             this.snackbarComponent.openError();
           },
           complete: () => console.info('send post complete'),

@@ -95,5 +95,101 @@
     "SECTION_PRIVACY_TEXT": "The use of our website is generally possible without providing personal data. If personal data (such as name, address, or email addresses) is collected on our pages, this is done on a voluntary basis whenever possible. This data will not be passed on to third parties without your explicit consent.Please note that data transmission over the Internet (e.g., communication via email) may have security vulnerabilities. Complete protection of data against access by third parties is not possible.The use of contact details published as part of the imprint obligation by third parties for sending unsolicited advertising or informational material is hereby expressly prohibited. The site operator reserves the right to take legal action in the event of unsolicited promotional information, such as spam emails.",
 
     "CREDITS_HTML": "Created with the <a href=\"https://impressum-generator.de\" rel=\"dofollow\">Imprint Generator</a> by WebsiteWissen.com, the guide for <a href=\"https://websitewissen.com/website-erstellen\" rel=\"dofollow\">Website creation</a>, <a href=\"https://websitewissen.com/homepage-baukasten-vergleich\" rel=\"dofollow\">Website builders</a> and <a href=\"https://websitewissen.com/shopsysteme-vergleich\" rel=\"dofollow\">Shop systems</a>. Legal text provided by <a href=\"https://www.kanzlei-hasselbach.de/\" rel=\"dofollow\">Kanzlei Hasselbach</a>."
+  },
+  "SNACKBAR": {
+    "EMAIL_SENT": "thanks for your message!",
+    "CLOSE": "close"
+  },
+  "PRIVACY": {
+    "TITLE": "Privacy Policy",
+
+    "SECTION_1": {
+      "TITLE": "1. Data Protection at a Glance",
+
+      "SUB_1": {
+        "TITLE": "General Information",
+        "TEXT": "The following information provides a simple overview of what happens to your personal data when you visit this website. Personal data is any data by which you can be personally identified."
+      },
+
+      "SUB_2": {
+        "TITLE": "Data Collection on This Website",
+
+        "WHO": {
+          "TITLE": "Who is responsible for data collection on this website?",
+          "TEXT": "Data processing on this website is carried out by the website operator. You can find the operator’s contact details in the section “Information on the Responsible Party” in this privacy policy."
+        },
+
+        "HOW": {
+          "TITLE": "How do we collect your data?",
+          "TEXT": "On the one hand, your data is collected when you provide it to us (for example, via a contact form).Other data is collected automatically or after your consent when you visit the website by our IT systems (such as browser type, operating system, or time of page access)."
+        },
+
+        "PURPOSE": {
+          "TITLE": "What do we use your data for?",
+          "TEXT": "Some of the data is collected to ensure the proper functioning of the website. Other data may be used to analyze your user behavior."
+        },
+
+        "RIGHTS": {
+          "TITLE": "What rights do you have regarding your data?",
+          "TEXT": "You have the right at any time to obtain information free of charge about the origin, recipient, and purpose of your stored personal data. You also have the right to request correction or deletion of this data."
+        }
+      },
+
+      "TOOLS": {
+        "TITLE": "Analytics Tools and Third-Party Tools",
+        "TEXT": "When visiting this website, your browsing behavior may be statistically analyzed. Detailed information on these analytics programs can be found in this privacy policy."
+      }
+    },
+
+    "SECTION_2": {
+      "TITLE": "2. Hosting",
+
+      "PROVIDER": {
+        "NAME": "Strato",
+        "TEXT_TITLE": "The provider is:",
+        "TEXT":" Strato AG, Otto-Ostrowski-Strasse 7, 10249 Berlin, Germany.When you visit our website, Strato collects various log files including your IP address.",
+        "LINK_LABEL": "Strato Privacy Policy",
+        "LINK_URL": "https://www.strato.de/datenschutz/",
+        "TEXT_2":""
+      }
+    },
+
+    "SECTION_3": {
+      "TITLE": "3. General Information and Mandatory Disclosures",
+      "SUB_TITLE": "Data protection",
+      "TEXT": "The operators of this website take the protection of your personal data very seriously. We treat your personal data confidentially and in accordance with the applicable data protection regulations as well as this privacy policy.\n\nWhen you use this website, various personal data are collected. Personal data are data by which you can be personally identified. This privacy policy explains which data we collect and for what purposes we use them. It also explains how and for what purpose this is done.\n\nWe point out that data transmission over the Internet (e.g. communication by email) may have security vulnerabilities. Complete protection of data against access by third parties is not possible.",
+      "RESPONSIBLE": {
+        "TITLE": "Information on the Responsible Party",
+        "ADDRESS": "Kevin Fischer, Overbeckstrasse 80, 50823 Cologne Germany",
+        "CONTACT": "Email: kevin.fi92@googlemail.com",
+        "TEXT": ""
+      },
+
+      "STORAGE": {
+        "TITLE": "Data Storage Duration",
+        "TEXT": "Unless a more specific storage period has been stated within this privacy policy, your personal data will remain with us until the purpose for data processing no longer applies or you request deletion."
+      },
+
+      "LEGAL": {
+        "TITLE": "Legal Basis for Data Processing",
+        "TEXT": "Data processing is carried out in accordance with Article 6 of the GDPR, based on your consent, for the fulfillment of a contract, or due to legitimate interests."
+      }
+    },
+
+    "SECTION_4": {
+      "TITLE": "4. Data Collection on This Website",
+
+      "CONTACT_FORM": {
+        "TITLE": "Contact Form",
+        "TEXT": "If you send us inquiries via the contact form, your details from the inquiry form, including the contact data you provided, will be stored for the purpose of processing your request."
+      }
+    },
+
+    "SOURCE": {
+      "LABEL": "Source",
+      "URL": "https://www.e-recht24.de"
+    },
+
+    "LEGAL_NOTICE": "The German version of this privacy policy is legally binding. This English translation is provided for informational purposes only."
   }
 }
