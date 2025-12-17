@@ -55,7 +55,11 @@
       "CHECKBOX": "I´ve read the privacy policy and agree to the processing of my data as outlined",
       "SEND_BUTTON": "Message Me",
       "SUCCESS": "",
-      "ERROR": ""
+      "ERROR": {
+        "NAME": "please enter your first and last name",
+        "EMAIL": "please enter your email address",
+        "MESSAGE": "please enter a message"
+      }
     }
   },
   "FOOTER": {

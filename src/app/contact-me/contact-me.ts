@@ -27,9 +27,7 @@ export class ContactMe {
   @ViewChild('emailInput') emailInput!: ElementRef<HTMLInputElement>;
   @ViewChild('contactForm') contactForm!: ElementRef<HTMLInputElement>;
   @ViewChild(snackbar) snackbarComponent!: snackbar;
-  readonly email = new FormControl('', [Validators.required, Validators.email]);
-  readonly name = new FormControl('', [Validators.required, Validators.email]);
-  readonly text = new FormControl('', [Validators.required, Validators.email]);
+
   http = inject(HttpClient);
 
 
@@ -40,9 +38,9 @@ export class ContactMe {
   privacyAccepted = false;
 
   constructor(private highlightStore: HighlightStore) {
-    merge(this.email.statusChanges, this.email.valueChanges)
-      .pipe(takeUntilDestroyed())
-      .subscribe(() => this.updateErrorMessage());
+
+
+
 
     effect(() => {
       if (this.highlightStore.highlightEmail()) {
@@ -62,17 +60,7 @@ export class ContactMe {
   }
 
 
-  updateErrorMessage() {
-    if (this.email.hasError('required')) {
-      this.errorEmail.set('You must enter a valid email address');
-    }
-    if (this.name.hasError('required')) {
-      this.errorName.set('You must enter a Fullname');
-    }
-    if (this.text.hasError('required')) {
-      this.errorText.set('You must enter a message');
-    }
-  }
+
 
   contactData = {
     name: "",

@@ -49,11 +49,15 @@
     "CHECKBOX": "Ich habe die Datenschutzerklärung gelesen und stimme der darin beschriebenen Verarbeitung meiner Daten zu.",
     "FORM": {
       "NAME": "Vor und Nachname",
-      "EMAIL": "deine Email Adresse",
+      "EMAIL": "Email Adresse",
       "MESSAGE": "Textfeld",
       "SEND_BUTTON": "Nachricht senden",
       "SUCCESS": "",
-      "ERROR": ""
+      "ERROR": {
+        "NAME": "Bitte gebe deinen Vor- und Nachnamen ein.",
+        "EMAIL": "Bitte gebe deine Email Adresse ein.",
+        "MESSAGE": "Bitte gebe einen Text ein."
+      }
     }
   },
   "FOOTER": {
