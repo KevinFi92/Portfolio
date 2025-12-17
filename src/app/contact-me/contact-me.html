@@ -33,7 +33,7 @@
       </mat-form-field>
       <mat-form-field class="form-field" style="height: 250px">
         <mat-label>{{ 'CONTACT.FORM.MESSAGE' | translate }}</mat-label>
-        <textarea [(ngModel)]="contactData.message" name="message" matInput required></textarea>
+        <textarea class="textarea" [(ngModel)]="contactData.message" name="message" matInput required></textarea>
         @if (name.invalid) {
           <mat-error>{{ errorText() }}</mat-error>
         }

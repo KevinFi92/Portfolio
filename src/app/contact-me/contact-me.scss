@@ -29,8 +29,13 @@ h1 {
   transition: outline 0.3s ease;
 }
 
+
 .form-field {
   width: 400px;
+}
+
+.textarea {
+  height: 550px;
 }
 
 @media screen and (max-width: 900px) and (orientation: landscape) {
