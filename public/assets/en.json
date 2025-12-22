@@ -14,11 +14,10 @@
   "ABOUT": {
     "TITLE": "< about me >",
     "TEXT_1": "Hi, I am Kevin. I started my journey as a web developer in 2024.",
-    "TEXT_2":   "Since than I have been building and refining my skills.",
-    "TEXT_3":"I like solving problems as part of a team and constantly learning new technologies.",
+    "TEXT_2": "Since than I have been building and refining my skills.",
+    "TEXT_3": "I like solving problems as part of a team and constantly learning new technologies.",
     "TEXT_4": "Over time, I’ve developed a solid foundation in HTML, CSS, JavaScript and TypeScript and I’m comfortable working with modern frameworks like Angular.",
-    "TEXT_5": "I also have experience with version control systems like Git and REST-API integration."
-    ,
+    "TEXT_5": "I also have experience with version control systems like Git and REST-API integration.",
     "ICON_1": "based in cologne",
     "ICON_2": "open to work remote",
     "ICON_3": "willing to learn"
@@ -72,28 +71,21 @@
   "IMPRINT": {
     "TITLE": "Imprint",
     "SUBTITLE": "Information according to Section 5 of the German Digital Services Act (DDG)",
-
     "ADDRESS": {
       "NAME": "Kevin Fischer",
       "STREET": "Overbeckstraße 80",
       "CITY": "50823 Cologne"
     },
-
     "REPRESENTED_BY_LABEL": "Represented by:",
     "REPRESENTED_BY_VALUE": "Kevin Fischer",
-
     "CONTACT_LABEL": "Contact:",
     "EMAIL_LABEL": "Email:",
-
     "SECTION_CONTENTS_TITLE": "Liability for Content",
     "SECTION_CONTENTS_TEXT": "The contents of our pages have been created with the utmost care. However, we cannot guarantee the accuracy, completeness, or timeliness of the content. As a service provider, we are responsible for our own content on these pages in accordance with Section 7 (1) DDG and general laws. According to Sections 8 to 10 DDG, we are not obligated to monitor transmitted or stored third-party information or to investigate circumstances that indicate illegal activity. Obligations to remove or block the use of information under general laws remain unaffected. Liability in this respect is only possible from the point in time at which a specific infringement becomes known. Upon becoming aware of such violations, we will remove the content immediately.",
-
     "SECTION_COPYRIGHT_TITLE": "Copyright",
     "SECTION_COPYRIGHT_TEXT": "The content and works created by the site operator on these pages are subject to German copyright law. Duplication, processing, distribution, and any form of exploitation outside the limits of copyright law require the written consent of the respective author or creator. Downloads and copies of this site are permitted only for private, non-commercial use. Insofar as the content on this site was not created by the operator, the copyrights of third parties are respected. In particular, third-party content is marked as such. Should you nevertheless become aware of a copyright infringement, please inform us accordingly. Upon notification of violations, such content will be removed immediately.",
-
     "SECTION_PRIVACY_TITLE": "Data Protection",
     "SECTION_PRIVACY_TEXT": "The use of our website is generally possible without providing personal data. If personal data (such as name, address, or email addresses) is collected on our pages, this is done on a voluntary basis whenever possible. This data will not be passed on to third parties without your explicit consent.Please note that data transmission over the Internet (e.g., communication via email) may have security vulnerabilities. Complete protection of data against access by third parties is not possible.The use of contact details published as part of the imprint obligation by third parties for sending unsolicited advertising or informational material is hereby expressly prohibited. The site operator reserves the right to take legal action in the event of unsolicited promotional information, such as spam emails.",
-
     "CREDITS_HTML": "Created with the <a href=\"https://impressum-generator.de\" rel=\"dofollow\">Imprint Generator</a> by WebsiteWissen.com, the guide for <a href=\"https://websitewissen.com/website-erstellen\" rel=\"dofollow\">Website creation</a>, <a href=\"https://websitewissen.com/homepage-baukasten-vergleich\" rel=\"dofollow\">Website builders</a> and <a href=\"https://websitewissen.com/shopsysteme-vergleich\" rel=\"dofollow\">Shop systems</a>. Legal text provided by <a href=\"https://www.kanzlei-hasselbach.de/\" rel=\"dofollow\">Kanzlei Hasselbach</a>."
   },
   "SNACKBAR": {
@@ -102,58 +94,47 @@
   },
   "PRIVACY": {
     "TITLE": "Privacy Policy",
-
     "SECTION_1": {
       "TITLE": "1. Data Protection at a Glance",
-
       "SUB_1": {
         "TITLE": "General Information",
         "TEXT": "The following information provides a simple overview of what happens to your personal data when you visit this website. Personal data is any data by which you can be personally identified."
       },
-
       "SUB_2": {
         "TITLE": "Data Collection on This Website",
-
         "WHO": {
           "TITLE": "Who is responsible for data collection on this website?",
           "TEXT": "Data processing on this website is carried out by the website operator. You can find the operator’s contact details in the section “Information on the Responsible Party” in this privacy policy."
         },
-
         "HOW": {
           "TITLE": "How do we collect your data?",
           "TEXT": "On the one hand, your data is collected when you provide it to us (for example, via a contact form).Other data is collected automatically or after your consent when you visit the website by our IT systems (such as browser type, operating system, or time of page access)."
         },
-
         "PURPOSE": {
           "TITLE": "What do we use your data for?",
           "TEXT": "Some of the data is collected to ensure the proper functioning of the website. Other data may be used to analyze your user behavior."
         },
-
         "RIGHTS": {
           "TITLE": "What rights do you have regarding your data?",
           "TEXT": "You have the right at any time to obtain information free of charge about the origin, recipient, and purpose of your stored personal data. You also have the right to request correction or deletion of this data."
         }
       },
-
       "TOOLS": {
         "TITLE": "Analytics Tools and Third-Party Tools",
         "TEXT": "When visiting this website, your browsing behavior may be statistically analyzed. Detailed information on these analytics programs can be found in this privacy policy."
       }
     },
-
     "SECTION_2": {
       "TITLE": "2. Hosting",
-
       "PROVIDER": {
         "NAME": "Strato",
         "TEXT_TITLE": "The provider is:",
-        "TEXT":" Strato AG, Otto-Ostrowski-Strasse 7, 10249 Berlin, Germany.When you visit our website, Strato collects various log files including your IP address.",
+        "TEXT": " Strato AG, Otto-Ostrowski-Strasse 7, 10249 Berlin, Germany.When you visit our website, Strato collects various log files including your IP address.",
         "LINK_LABEL": "Strato Privacy Policy",
         "LINK_URL": "https://www.strato.de/datenschutz/",
-        "TEXT_2":""
+        "TEXT_2": ""
       }
     },
-
     "SECTION_3": {
       "TITLE": "3. General Information and Mandatory Disclosures",
       "SUB_TITLE": "Data protection",
@@ -164,32 +145,64 @@
         "CONTACT": "Email: kevin.fi92@googlemail.com",
         "TEXT": ""
       },
-
       "STORAGE": {
         "TITLE": "Data Storage Duration",
         "TEXT": "Unless a more specific storage period has been stated within this privacy policy, your personal data will remain with us until the purpose for data processing no longer applies or you request deletion."
       },
-
       "LEGAL": {
         "TITLE": "Legal Basis for Data Processing",
         "TEXT": "Data processing is carried out in accordance with Article 6 of the GDPR, based on your consent, for the fulfillment of a contract, or due to legitimate interests."
       }
     },
-
-    "SECTION_4": {
-      "TITLE": "4. Data Collection on This Website",
-
-      "CONTACT_FORM": {
-        "TITLE": "Contact Form",
-        "TEXT": "If you send us inquiries via the contact form, your details from the inquiry form, including the contact data you provided, will be stored for the purpose of processing your request."
-      }
+    "RECIPIENTS": {
+      "TITLE": "",
+      "TEXT": ""
     },
-
-    "SOURCE": {
-      "LABEL": "Source",
-      "URL": "https://www.e-recht24.de"
-    },
-
-    "LEGAL_NOTICE": "The German version of this privacy policy is legally binding. This English translation is provided for informational purposes only."
+      "REVOCATION": {
+        "TITLE": "",
+        "TEXT": ""
+      },
+      "OBJECTION": {
+        "TITLE": "",
+        "TEXT": ""
+      },
+      "COMPLAINT": {
+        "TITLE": "",
+        "TEXT": ""
+      },
+      "PORTABILITY": {
+        "TITLE": "",
+        "TEXT": ""
+      },
+      "INFORMATION_CORRECTION_DELETION": {
+        "TITLE": "",
+        "TEXT": ""
+      },
+      "RESTRICTION": {
+        "TITLE": "",
+        "INTRO": "",
+        "LIST_1": "",
+        "LIST_2":"",
+        "LIST_3":"",
+        "LIST_4":"",
+        "OUTRO": ""
+      },
+      "SSL_TLS": {
+        "TITLE": "SSL or TLS encryption",
+        "TEXT": "This site uses SSL or TLS encryption for security reasons and to protect the transmission of confidential content, such as orders or inquiries that you send to us as the site operator. You can recognize an encrypted connection by the change in the browser’s address bar from “http://” to “https://” and by the lock symbol in your browser bar.\n\nIf SSL or TLS encryption is enabled, the data you transmit to us cannot be read by third parties."
+      },
+      "SECTION_4": {
+        "TITLE": "4. Data Collection on This Website",
+        "CONTACT_FORM": {
+          "TITLE": "Contact Form",
+          "TEXT": "If you send us inquiries via the contact form, your details from the inquiry form, including the contact data you provided, will be stored for the purpose of processing your request."
+        }
+      },
+      "SOURCE": {
+        "LABEL": "Source",
+        "URL": "https://www.e-recht24.de"
+      },
+      "LEGAL_NOTICE": "The German version of this privacy policy is legally binding. This English translation is provided for informational purposes only."
+    }
   }
-}
+
