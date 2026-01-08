@@ -65,6 +65,11 @@ footer {
   }
 }
 
+@media screen and (max-width: 610px) {
+  .content {
+    padding: 0 10px;
+  }
+}
 
 @media screen and (max-width: 470px) {
   .menu {
@@ -74,8 +79,6 @@ footer {
     display: none;
   }
   footer {
-
-
     > img {
       height: 60px;
       width: 60px;
@@ -84,10 +87,6 @@ footer {
   .legal {
     @include flex-box(column, center, center);
     gap: 0;
-  }
-
-  .content{
-    padding: 0 10px;
   }
 }
 

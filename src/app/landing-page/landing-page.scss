@@ -52,10 +52,16 @@ h2 {
     margin: 0;
   }
 }
-
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 890px) {
   p {
     font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+
+  p {
+    font-size: 24px;
   }
 
   h1 {
@@ -67,9 +73,9 @@ h2 {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 660px) {
   p {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   h1 {
