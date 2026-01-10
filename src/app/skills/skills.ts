@@ -27,7 +27,8 @@ export class Skills {
       }
       });
     }, {
-      threshold: 0.1
+      threshold: 0.1,
+      rootMargin: '0px 0px -20% 0px'
     });
 
     observer.observe(this.slideLeft.nativeElement);

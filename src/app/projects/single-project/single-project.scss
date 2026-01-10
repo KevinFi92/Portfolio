@@ -2,8 +2,8 @@
 
 .single-project {
   @include flex-box(column, space-between, center);
-  width: 65vw;
-  height: 65vh;
+  width: 40vw;
+  height: 40vh;
   border: 1px solid rgb(0, 215, 254);
   border-radius: 15px;
   box-shadow: 0 0 10px rgb(0, 215, 254);
@@ -53,6 +53,13 @@
   font-size: 28px !important;
   padding: 20px 35px !important;
   font-weight: 500 !important;
+}
+
+@media screen and (max-width: 1930px) {
+  .single-project {
+    width: 65vw;
+    height: 65vh;
+  }
 }
 
 @media screen and (max-width: 1310px) {
