@@ -49,13 +49,31 @@ h1 {
     font-size: 24px;
   }
   .about-img{
-
+>img{
+  width: 700px;
+}
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
   .about-me-content {
-    font-size: 24px;
+    font-size: 22px;
+  }
+  .pins {
+    > p {
+      font-size: 22px;
+    }
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .about-img {
+    > img {
+      width: 600px;
+    }
+  }
+  .me {
+    gap: 30px
   }
 }
 
