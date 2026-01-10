@@ -133,6 +133,32 @@ button {
   background:  white;
   border-radius: 10px;
 }
+@media screen and (max-width: 1150px) {
+  .slide-in-left {
+    transform: translateX(-40px);
+  }
+  .slide-in-right {
+    transform: translateX(40px);
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .slide-in-left {
+    transform: translateX(-30px);
+  }
+  .slide-in-right {
+    transform: translateX(30px);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .slide-in-left {
+    transform: translateX(-20px);
+  }
+  .slide-in-right {
+    transform: translateX(20px);
+  }
+}
 
 @media screen and (max-width: 550px) {
   .button-transparent{

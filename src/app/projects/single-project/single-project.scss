@@ -110,7 +110,8 @@
 
 @media screen and (max-height: 430px) and (orientation: landscape) {
   .single-project {
-    height: 76vh;
+    margin: 40px 0 60px 0;
+    height: 85vh;
   }
   .project-info {
     @include flex-box(row, center, center);
@@ -136,8 +137,20 @@
     height: 90vh;
   }
   .project-info {
+    height: 80%;
     padding-top: 10px;
   }
+.project-btn {
+  margin:0;
+}
+  .button-transparent{
+    font-size: 16px !important;
+    padding: 0 10px !important;
+  }
+  p{
+    margin: 6px;
+  }
+
 }
 
 @media screen and (max-width: 550px) {
