@@ -9,13 +9,18 @@
 }
 
 .about-me-content {
-  @include flex-box(column, center, center);
+  @include flex-box(row, center, center);
   margin-top: 100px;
-  height: 100vh;
+  height: 95vh;
   font-size: 28px;
   line-height: 1.2;
   max-width: 1920px;
 }
+
+.about-txt{
+  @include flex-box(column, center, center);
+}
+
 
 h1 {
   font-size: 48px;
@@ -29,7 +34,7 @@ h1 {
 
 .me {
   @include flex-box(row, center, space-evenly);
-  gap: 150px;
+  gap: 50px;
   overflow: clip;
 }
 
@@ -37,6 +42,15 @@ h1 {
   margin-top: 50px;
   @include flex-box(column, center, center);
   text-align: center;
+}
+
+@media screen and (max-width: 1410px) {
+  .about-me-content {
+    font-size: 24px;
+  }
+  .about-img{
+
+  }
 }
 
 @media screen and (max-width: 1024px) {

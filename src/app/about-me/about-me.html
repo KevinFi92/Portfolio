@@ -3,27 +3,32 @@
     <h1>{{ 'ABOUT.TITLE' | translate }}</h1>
   </div>
   <div class="about-me-content">
-    <p>{{ 'ABOUT.TEXT_1' | translate }}
-      {{ 'ABOUT.TEXT_2' | translate }}
-      {{ 'ABOUT.TEXT_3' | translate }}
-      {{ 'ABOUT.TEXT_4' | translate }}
-      {{ 'ABOUT.TEXT_5' | translate }}</p>
-    <div class="me">
-      <div #slideLeft class="pins slide-in-left">
-        <img class="location" src="assets/img/about/location.png" alt="">
-        <p> {{ 'ABOUT.ICON_1' | translate }}</p>
+      <div class="about-img">
+        <img src="assets/img/about/me.png"/>
       </div>
-      <div #slideIn class="pins slide-in">
-        <img class="location" src="assets/img/about/laptop.png" alt="">
-        <p> {{ 'ABOUT.ICON_2' | translate }}</p>
+      <div class="about-txt">
+        <p>
+          {{ 'ABOUT.TEXT_1' | translate }}
+          {{ 'ABOUT.TEXT_2' | translate }}
+          {{ 'ABOUT.TEXT_3' | translate }}
+          {{ 'ABOUT.TEXT_4' | translate }}
+          {{ 'ABOUT.TEXT_5' | translate }}
+        </p>
+        <div class="me">
+          <div #slideLeft class="pins slide-in-left">
+            <img class="location" src="assets/img/about/location.png" alt="">
+            <p> {{ 'ABOUT.ICON_1' | translate }}</p>
+          </div>
+          <div #slideIn class="pins slide-in">
+            <img class="location" src="assets/img/about/laptop.png" alt="">
+            <p> {{ 'ABOUT.ICON_2' | translate }}</p>
+          </div>
+          <div #slideRight class="pins slide-in-right">
+            <img class="location" src="assets/img/about/learning.png" alt="">
+            <p> {{ 'ABOUT.ICON_3' | translate }}</p>
+          </div>
+        </div>
       </div>
-      <div #slideRight class="pins slide-in-right">
-        <img class="location" src="assets/img/about/learning.png" alt="">
-        <p> {{ 'ABOUT.ICON_3' | translate }}</p>
-      </div>
-    </div>
-    <!--    <img src="assets/img/about/me.png" height="600" width="485"/>-->
   </div>
-
 </section>
 
