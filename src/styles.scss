@@ -95,7 +95,7 @@ button {
 
 .slide-in-right {
   opacity: 0;
-  transform: translateX(60px);
+  transform: translateX(45px);
   transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
@@ -106,7 +106,7 @@ button {
 
 .slide-in-left {
   opacity: 0;
-  transform: translateX(-60px);
+  transform: translateX(-45px);
   transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
@@ -135,28 +135,28 @@ button {
 }
 @media screen and (max-width: 1150px) {
   .slide-in-left {
-    transform: translateX(-40px);
+    transform: translateX(-35px);
   }
   .slide-in-right {
-    transform: translateX(40px);
+    transform: translateX(35px);
   }
 }
 
 @media screen and (max-width: 1150px) {
   .slide-in-left {
-    transform: translateX(-30px);
+    transform: translateX(-25px);
   }
   .slide-in-right {
-    transform: translateX(30px);
+    transform: translateX(25px);
   }
 }
 
 @media screen and (max-width: 400px) {
   .slide-in-left {
-    transform: translateX(-20px);
+    transform: translateX(-15px);
   }
   .slide-in-right {
-    transform: translateX(20px);
+    transform: translateX(15px);
   }
 }
 
