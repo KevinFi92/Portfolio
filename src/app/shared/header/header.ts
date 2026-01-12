@@ -38,6 +38,8 @@ export class Header {
     }
   }
 
+
+
   links = [
     {
       name: "Home",
@@ -52,6 +54,11 @@ export class Header {
     {
       name: "Projects",
       link: "projects",
+      isSection: true
+    },
+    {
+      name: "Skills",
+      link: "skills",
       isSection: true
     },
     {

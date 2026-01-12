@@ -2,9 +2,12 @@
 
 header {
   @include flex-box(row, center, center);
-
   background-image: linear-gradient(to right, rgb(16, 20, 20), rgb(1, 115, 240));
-
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  margin-top: 0;
+  height: 80px;
 }
 
 .content {
@@ -52,9 +55,9 @@ a {
     content: "";
     position: absolute;
     left: 0;
-    bottom: -8px; // Abstand zum Text
+    bottom: -8px;
     width: 0;
-    height: 2px; // Dicke der Linie
+    height: 2px;
     background-color: currentColor;
     transition: width 0.3s ease;
   }
@@ -68,13 +71,13 @@ a {
   }
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 830px) {
   a {
     font-size: 20px;
   }
 }
 
-@media screen and (max-width: 615px) {
+@media screen and (max-width: 750px) {
   .links {
     display: none;
   }

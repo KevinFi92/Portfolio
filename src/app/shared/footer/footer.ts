@@ -24,8 +24,8 @@ export class Footer {
     },
     {
       name: "Email",
-      link: "email",
-      isAction: true
+      link: "mailto:kevin.fi92@gmail.com",
+      isExternal: true
     }
   ]
 
