@@ -16,11 +16,15 @@ import {TranslatePipe, TranslateService} from '@ngx-translate/core';
 export class Header {
   constructor(private translate: TranslateService) {}
 
-  lang="en"
+  lang = 'en';
   langIMG="assets/img/en.png"
 
+  ngOnInit(){
+    this.getLangFromStorage();
+  }
 
   switchLang() {
+
     if (this.lang=== 'en') {
       this.lang = 'de';
     }else {
@@ -33,9 +37,21 @@ export class Header {
   switchImg(){
     if (this.langIMG.includes('en.png')) {
       this.langIMG = "assets/img/de.png";
+      localStorage.setItem('lang', 'de');
     }else {
       this.langIMG = "assets/img/en.png";
+      localStorage.setItem('lang', 'en');
     }
+  }
+
+  getLangFromStorage(){
+    let localLang = localStorage.getItem('lang');
+    if (localLang == null) {
+      this.lang = 'en';
+    }else {
+      this.lang = localLang;
+    }
+    console.log(localLang);
   }
 
 
@@ -43,7 +59,7 @@ export class Header {
   links = [
     {
       name: "Home",
-      link: "",
+      link: "home",
       isRoute: true
     },
     {
