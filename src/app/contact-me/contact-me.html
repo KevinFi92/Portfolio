@@ -38,7 +38,7 @@
         }
       </mat-form-field>
       <mat-checkbox (change)="privacyAccepted = $event.checked">{{ 'CONTACT.CHECKBOX' | translate }}</mat-checkbox>
-      <button type="submit" matButton="outlined" class="button-transparent"
+      <button type="submit"  class="button-transparent"
               [disabled]="contactForm.invalid || !privacyAccepted">{{ 'CONTACT.FORM.SEND_BUTTON' | translate }}
       </button>
     </form>

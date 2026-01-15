@@ -64,22 +64,40 @@ button {
   width: 100%;
 }
 
-.button-blue{
-  background-image: linear-gradient(to right, rgb(0, 215, 254), rgb(1, 115, 240)) !important;
-  color: white !important;
-  font-size: 24px !important;
-  font-weight: 500 !important;
-  padding : 10px 40px !important;
-  border-radius: 10px !important;
-}
-
 .button-transparent{
-  border: 2.5px solid white !important;;
+  opacity: 1;
+  border: 2.5px solid white !important;
   border-radius: 10px !important;
   color: white !important;
   font-size: 28px !important;
   padding : 10px 40px !important;
   font-weight: 500 !important;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    background-color 0.25s ease,
+    color 0.25s ease;
+
+&:hover{
+  transform: translateY(-3px);
+  background-color: rgba(255, 255, 255, 0.08);
+  box-shadow:
+    0 0 0 2px rgba(255, 255, 255, 0.15),
+    0 12px 30px rgba(0, 0, 0, 0.35);
+}
+  &:active{
+    transform: translateY(0);
+    background-color: rgba(255, 255, 255, 0.16);
+    box-shadow:
+      0 4px 12px rgba(0, 0, 0, 0.4) inset;
+  }
+  &:disabled,
+  &[disabled]{
+    opacity: 0.45;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+
 }
 
 .slide-in {

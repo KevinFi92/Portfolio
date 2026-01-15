@@ -5,13 +5,8 @@
       <p>{{ project.description  | translate }}</p>
       <div class="project-btn">
         @if (!project.inProgress) {
-          <a href="{{ project.GitHub }}" matButton="outlined" class="button-transparent" target="_blank">GitHub</a>
-          <a href="{{ project.link }}" matButton="outlined" class="button-transparent" target="_blank">Live Test</a>
-        } @else {
-          <a href="{{ project.GitHub }}" matButton="outlined" class="button-transparent" [disabled]="true"
-             target="_blank">GitHub</a>
-          <a href="{{ project.link }}" matButton="outlined" class="button-transparent" [disabled]="true"
-             target="_blank">Live Test</a>
+          <a href="{{ project.GitHub }}"  class="button-transparent" target="_blank">GitHub</a>
+          <a href="{{ project.link }}"  class="button-transparent" target="_blank">Live Test</a>
         }
       </div>
     </div>

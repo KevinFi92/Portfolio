@@ -21,11 +21,12 @@ export class Header {
 
   ngOnInit(){
     this.getLangFromStorage();
+    this.switchLang();
   }
 
   switchLang() {
 
-    if (this.lang=== 'en') {
+    if (this.lang === 'en') {
       this.lang = 'de';
     }else {
       this.lang = 'en';
@@ -35,7 +36,7 @@ export class Header {
   }
 
   switchImg(){
-    if (this.langIMG.includes('en.png')) {
+    if (this.lang == 'en') {
       this.langIMG = "assets/img/de.png";
       localStorage.setItem('lang', 'de');
     }else {
@@ -51,7 +52,6 @@ export class Header {
     }else {
       this.lang = localLang;
     }
-    console.log(localLang);
   }
 
 
