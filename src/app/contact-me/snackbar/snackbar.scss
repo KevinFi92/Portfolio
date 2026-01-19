@@ -1,3 +1,14 @@
 .supporting-text-size{
   font-size: 140px;
 }
+
+.center-snackbar{
+  position: fixed !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+
+  margin: 0 !important;
+  max-width: 90vw;
+  text-align: center;
+}

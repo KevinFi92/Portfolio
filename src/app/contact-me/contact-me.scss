@@ -17,6 +17,8 @@ h1 {
   font-size: 48px;
 }
 
+
+
 .contact-form {
   @include flex-box(column, center, center);
   margin-top: 100px;

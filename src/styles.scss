@@ -37,6 +37,7 @@ html {
 }
 
 html{
+  line-height: 1;
   scroll-behavior: smooth;
 }
 
@@ -65,7 +66,7 @@ button {
 }
 
 .button-transparent{
-  opacity: 1;
+
   border: 2.5px solid white !important;
   border-radius: 10px !important;
   color: white !important;
@@ -93,7 +94,7 @@ button {
   }
   &:disabled,
   &[disabled]{
-    opacity: 0.45;
+  opacity: 0.5;
     cursor: not-allowed;
     pointer-events: none;
   }
@@ -158,6 +159,30 @@ button {
   .slide-in-right {
     transform: translateX(35px);
   }
+}
+
+typewriter{
+  display: inline-block;
+  overflow: hidden;              /* versteckt den noch nicht "getippten" Teil */
+  white-space: nowrap;           /* kein Zeilenumbruch während der Animation */
+  border-right: 2px solid currentColor; /* Cursor */
+
+  /* Tipp: steps(N) sollte ungefähr der Zeichenanzahl entsprechen */
+  animation:
+    typing 2.5s steps(13, end) forwards,
+    caret 0.8s step-end 2.5s 3 forwards;
+}
+
+/* "Schreibt" von 0 bis volle Breite */
+@keyframes typing{
+  from { width: 0; }
+  to   { width: 100%; }
+}
+
+/* Cursor blinkt */
+@keyframes caret{
+  0%, 100% { border-color: currentColor; }
+  50%      { border-color: transparent; }
 }
 
 @media screen and (max-width: 1150px) {

@@ -28,6 +28,7 @@ constructor(private translate: TranslateService) {
           translations['SNACKBAR.CLOSE'],
           {
             duration: this.durationInSeconds * 1000,
+            panelClass: ['center-snackbar']
           }
         );
       });
