@@ -2,8 +2,10 @@
 
 footer {
   @include flex-box(row, center, center);
-  font-size: 16px;
+}
 
+p, a{
+  font-size: 16px;
 }
 
 .content {
@@ -72,7 +74,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 470px) {
+@media screen and (max-width: 500px) {
   .menu {
     display: block;
   }

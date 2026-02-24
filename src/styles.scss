@@ -37,12 +37,26 @@ html {
 }
 
 :root {
-  --fs-hero: clamp(2.5rem, 6vw, 5rem);
-  --fs-h1: clamp(2rem, 5vw, 4rem);
-  --fs-h2: clamp(1.8rem, 3vw, 2.5rem);
-  --fs-body: clamp(1rem, 1.2vw, 1.2rem);
+  --fs-h1: clamp(2rem, 7vw, 10rem);
+  --fs-h2: clamp(1.8rem, 3vw, 6rem);
+  --fs-body: clamp(1.1rem, 1.5vw, 3rem);
+  --fs-button: clamp(1.2rem, 1.6vw, 2.8rem);
   --fs-small: clamp(0.9rem, 1vw, 1rem);
 }
+
+p {
+  font-size: var(--fs-body);
+}
+
+h1 {
+  font-size: var(--fs-h1);
+}
+
+h2 {
+  font-size: var(--fs-h2);
+}
+
+
 
 html{
   line-height: 1;
@@ -59,6 +73,7 @@ body {
 
 
 a {
+  font-size: var(--fs-body);
   text-decoration: none;
   color: rgb(0, 215, 254);
 }
@@ -78,7 +93,7 @@ button {
   border: 2.5px solid white !important;
   border-radius: 10px !important;
   color: white !important;
-  font-size: 28px !important;
+  font-size: var(--fs-button) !important;
   padding : 10px 40px !important;
   font-weight: 500 !important;
   transition:

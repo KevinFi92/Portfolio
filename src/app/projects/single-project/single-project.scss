@@ -2,26 +2,27 @@
 
 .single-project {
   @include flex-box(column, space-between, center);
-  width: min(900px, 90vw);
-  height: auto;
+  height: 800px;
   border: 1px solid rgb(0, 215, 254);
   border-radius: 15px;
   box-shadow: 0 0 10px rgb(0, 215, 254);
-
-
+  width: min(1200px, 80%);
+  margin-inline: auto; padding-inline: 1rem;
+  
 
   .project-img {
     width: 50%;
     height: auto;        /* oder 100% wenn Container feste Höhe hat */
     object-fit: cover;   /* verhindert Verzerren */
     display: block;
+
   }
 }
 
 .project-info {
   @include flex-box(row, center, center);
   width: 95%;
-  margin-left: 20px;
+  margin: 30px 20px 30px 20px;
 }
 
 .project-txt {
@@ -46,14 +47,6 @@
   gap: 20px;
 }
 
-.button-transparent {
-  border: 2.5px solid white !important;
-  border-radius: 10px !important;
-  color: white !important;
-  font-size: 28px !important;
-  padding: 10px 17px !important;
-  font-weight: 500 !important;
-}
 
 @media screen and (min-width: 1920px) {
   .single-project {
@@ -195,7 +188,7 @@
     padding: 10px 15px !important;
   }
   .single-project {
-    width: 70vw !important;
+    width: 60vw !important;
   }
 }
 
