@@ -36,6 +36,14 @@ html {
   font-style: normal;
 }
 
+:root {
+  --fs-hero: clamp(2.5rem, 6vw, 5rem);
+  --fs-h1: clamp(2rem, 5vw, 4rem);
+  --fs-h2: clamp(1.8rem, 3vw, 2.5rem);
+  --fs-body: clamp(1rem, 1.2vw, 1.2rem);
+  --fs-small: clamp(0.9rem, 1vw, 1rem);
+}
+
 html{
   line-height: 1;
   scroll-behavior: smooth;

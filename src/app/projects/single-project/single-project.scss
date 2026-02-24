@@ -2,19 +2,19 @@
 
 .single-project {
   @include flex-box(column, space-between, center);
-  width: 25vw;
-  height: 40vh;
+  width: min(900px, 90vw);
+  height: auto;
   border: 1px solid rgb(0, 215, 254);
   border-radius: 15px;
   box-shadow: 0 0 10px rgb(0, 215, 254);
 
 
+
   .project-img {
-    display: flex;
-    justify-content: flex-start;
     width: 50%;
-    height: 95%;
-    border-radius: 10px;
+    height: auto;        /* oder 100% wenn Container feste Höhe hat */
+    object-fit: cover;   /* verhindert Verzerren */
+    display: block;
   }
 }
 
@@ -41,8 +41,8 @@
 }
 
 .project-btn {
-  margin-top: 10%;
   display: flex;
+  @include flex-box(row, center, center);
   gap: 20px;
 }
 
@@ -51,18 +51,18 @@
   border-radius: 10px !important;
   color: white !important;
   font-size: 28px !important;
-  padding: 20px 35px !important;
+  padding: 10px 17px !important;
   font-weight: 500 !important;
 }
 
-
-
-@media screen and (max-width: 2500px) {
+@media screen and (min-width: 1920px) {
   .single-project {
-    width: 65vw;
-    height: 65vh;
+    /* bleibt gleich groß, nur Layout drumherum kann luftiger werden */
+    margin-inline: auto;
   }
 }
+
+
 
 @media screen and (max-width: 1310px) {
 
