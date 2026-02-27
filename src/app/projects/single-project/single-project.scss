@@ -8,14 +8,13 @@
   box-shadow: 0 0 10px rgb(0, 215, 254);
   width: min(1200px, 80%);
   margin-inline: auto; padding-inline: 1rem;
-  
+
 
   .project-img {
     width: 50%;
     height: auto;        /* oder 100% wenn Container feste Höhe hat */
-    object-fit: cover;   /* verhindert Verzerren */
+    object-fit: contain;   /* verhindert Verzerren */
     display: block;
-
   }
 }
 
@@ -37,7 +36,6 @@
 
   > p {
     line-height: 1.2;
-    font-size: 24px;
   }
 }
 
@@ -47,50 +45,37 @@
   gap: 20px;
 }
 
+@media screen and (min-width: 3000px) {
+  .single-project {
+    height: 1000px;
+  }
+}
 
 @media screen and (min-width: 1920px) {
   .single-project {
-    /* bleibt gleich groß, nur Layout drumherum kann luftiger werden */
     margin-inline: auto;
   }
 }
 
-
-
-@media screen and (max-width: 1310px) {
-
-  .button-transparent {
-    font-size: 24px !important;
-    padding: 20px 35px !important;
+@media screen and (max-width: 1440px) {
+  .single-project {
+    height: 700px;
   }
-
-  .project-txt {
-    > p {
-      line-height: 1.2;
-      font-size: 18px;
-    }
-  }
-
-  .button-transparent {
-    font-size: 22px !important;
-  }
-
 }
 
-@media screen and (max-width: 920px) {
+
+@media screen and (max-width: 1250px) {
   .project-info {
     flex-direction: column;
     align-items: center;
 
     > img {
       width: 80% !important;
-      height: 40% !important;
+
     }
   }
 
-  .button-transparent {
-    font-size: 18px !important;
-  }
+
 
   .project-btn {
     margin: 10px 0 20px 0;
@@ -102,6 +87,7 @@
     height: 75vh;
   }
 }
+
 
 @media screen and (max-height: 430px) and (orientation: landscape) {
   .single-project {
@@ -155,23 +141,9 @@
   }
 
   .project-txt {
-    align-items: center;
-    text-align: flex-start;
     margin: 0;
-
-    > h1 {
-      font-size: 38px;
-    }
   }
-  .project-txt {
-    > p {
-      font-size: 14px;
-    }
 
-    > h1 {
-      font-size: 32px;
-    }
-  }
   .project-info {
     height: 100%;
 

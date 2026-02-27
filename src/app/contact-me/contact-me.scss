@@ -4,8 +4,8 @@
 .contact-dialog {
   @include flex-box(column, center, center);
   margin: 0 50px 0 50px;
-  height: 100vh;
-  scroll-margin-top: -70px;
+  height: 80vh;
+  scroll-margin-top: -95px;
 }
 
 .contact-content{
@@ -22,13 +22,16 @@ h1 {
 .contact-form {
   @include flex-box(column, center, center);
   margin-top: 100px;
-  gap: 10px;
+  gap: 15px;
 }
 
 ::ng-deep .mat-mdc-checkbox .mdc-form-field > label {
   font-size: 16px;
 }
 
+.error-msg{
+  font-size: 16px;
+}
 
 .highlight {
   box-shadow: 0 0 10px rgb(0, 215, 254);
@@ -41,6 +44,12 @@ h1 {
 
 .textarea {
   height: 550px;
+}
+
+@media screen and (min-width: 2800px) {
+  .contact-dialog  {
+    height: 45vh;
+  }
 }
 
 @media screen and (max-width: 900px) and (orientation: landscape) {

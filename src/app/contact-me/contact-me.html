@@ -13,7 +13,7 @@
                placeholder="{{ 'CONTACT.FORM.NAME' | translate }}" name="name"
                #name="ngModel">
         @if (name.invalid) {
-          <mat-error>{{ 'CONTACT.FORM.ERROR.NAME' | translate }}</mat-error>
+          <mat-error class="error-msg">{{ 'CONTACT.FORM.ERROR.NAME' | translate }}</mat-error>
         }
       </mat-form-field>
       <mat-form-field class="form-field">
@@ -27,14 +27,14 @@
           #email="ngModel"
         />
         @if (email.invalid) {
-          <mat-error>{{ 'CONTACT.FORM.ERROR.EMAIL' | translate }}</mat-error>
+          <mat-error class="error-msg">{{ 'CONTACT.FORM.ERROR.EMAIL' | translate }}</mat-error>
         }
       </mat-form-field>
       <mat-form-field class="form-field" style="height: 250px">
         <mat-label>{{ 'CONTACT.FORM.MESSAGE' | translate }}</mat-label>
         <textarea style="height: 190px" class="textarea" [(ngModel)]="contactData.message" name="message" #message="ngModel" matInput required></textarea>
         @if (message.invalid) {
-          <mat-error>{{ 'CONTACT.FORM.ERROR.MESSAGE' | translate }}</mat-error>
+          <mat-error class="error-msg">{{ 'CONTACT.FORM.ERROR.MESSAGE' | translate }}</mat-error>
         }
       </mat-form-field>
       <mat-checkbox (change)="privacyAccepted = $event.checked">{{ 'CONTACT.CHECKBOX' | translate }}</mat-checkbox>
