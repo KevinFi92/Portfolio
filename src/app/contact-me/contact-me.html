@@ -36,12 +36,13 @@
         @if (message.invalid) {
           <mat-error class="error-msg">{{ 'CONTACT.FORM.ERROR.MESSAGE' | translate }}</mat-error>
         }
+
       </mat-form-field>
-      <mat-checkbox (change)="privacyAccepted = $event.checked">{{ 'CONTACT.CHECKBOX' | translate }}</mat-checkbox>
+      <mat-checkbox [checked]="privacyAccepted" (change)="privacyAccepted = $event.checked">{{ 'CONTACT.CHECKBOX' | translate }}</mat-checkbox>
       <button type="submit"  class="button-transparent"
               [disabled]="contactForm.invalid || !privacyAccepted">{{ 'CONTACT.FORM.SEND_BUTTON' | translate }}
       </button>
     </form>
-    <app-snackbar class="snackBar"></app-snackbar>
+    <app-snackbar class="snack-bar"></app-snackbar>
   </div>
 </section>

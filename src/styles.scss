@@ -40,8 +40,8 @@ html {
   --fs-h1: clamp(2rem, 7vw, 10rem);
   --fs-h2: clamp(1.8rem, 3vw, 6rem);
   --fs-body: clamp(1.1rem, 1.5vw, 3rem);
-  --fs-button: clamp(1.2rem, 1.6vw, 2.8rem);
-  --fs-small: clamp(0.9rem, 1vw, 1rem);
+  --fs-button: clamp(1.25rem, 1.6vw, 2.8rem);
+  --fs-small: clamp(1rem, 1vw, 1rem);
 }
 
 p {
@@ -215,6 +215,27 @@ button {
     font-size: 18px !important;
     padding : 10px 20px !important;
   }
+}
+
+.center-snackbar{
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  margin: 0 !important;
+  text-align: center;
+  max-width: 90% !important;
+
+  font-weight: bold !important;
+
+}
+
+:root {
+  @include mat.snack-bar-overrides((
+    supporting-text-font: Roboto,
+    supporting-text-size: 16px,
+    supporting-text-weight: 500
+  ));
 }
 
 

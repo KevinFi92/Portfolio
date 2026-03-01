@@ -3,10 +3,7 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatDialogModule} from '@angular/material/dialog';
-import {FormControl, NgForm, ReactiveFormsModule, Validators} from '@angular/forms';
-import {merge} from 'rxjs';
-import {takeUntilDestroyed} from '@angular/core/rxjs-interop';
-import {MatButton} from '@angular/material/button';
+import { NgForm, ReactiveFormsModule} from '@angular/forms';
 import {FormsModule} from '@angular/forms';
 import {HttpClient} from '@angular/common/http';
 import {HighlightStore} from '../shared/highlight.store';
@@ -17,7 +14,7 @@ import {TranslatePipe} from '@ngx-translate/core';
 
 @Component({
   selector: 'app-contact-me',
-  imports: [MatFormFieldModule, MatInputModule, MatSelectModule, MatDialogModule, ReactiveFormsModule, MatButton,
+  imports: [MatFormFieldModule, MatInputModule, MatSelectModule, MatDialogModule, ReactiveFormsModule,
     FormsModule, snackbar, MatCheckbox, TranslatePipe],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './contact-me.html',
@@ -31,9 +28,7 @@ export class ContactMe {
   http = inject(HttpClient);
 
 
-  errorEmail = signal('');
-  errorName = signal('');
-  errorText = signal('');
+
 
   privacyAccepted = false;
 
@@ -88,6 +83,7 @@ export class ContactMe {
           next: (response) => {
             this.snackbarComponent.openSuccess();
             ngForm.resetForm();
+            this.privacyAccepted = false;
           },
           error: (error) => {
             this.snackbarComponent.openError();
