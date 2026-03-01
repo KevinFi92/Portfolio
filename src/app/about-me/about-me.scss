@@ -174,8 +174,8 @@ h1 {
 
 @media screen and (max-height: 430px) and (orientation: landscape) {
   .about-me {
-    margin-top: 100px;
-    margin-bottom: 300px;
+    height: auto;
+
   }
   .about-me-content {
     @include flex-box(column, center, center);

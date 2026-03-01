@@ -83,10 +83,9 @@ h1 {
 }
 
 @media screen and (max-height: 430px) and (orientation: landscape) {
-  h1 {
-    margin-top: 150px;
-  }
+
   .skills {
+    height: auto;
     margin: 150px 30px 0 30px;
   }
   .skill-content {
@@ -111,6 +110,7 @@ h1 {
 @media screen and (max-width: 550px) {
   .skills {
     margin: 0 30px 0 30px;
+    height: auto;
   }
 
   .skill-icons {
@@ -163,5 +163,4 @@ h1 {
     }
   }
 }
-
 

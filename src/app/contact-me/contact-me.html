@@ -8,7 +8,7 @@
       <mat-form-field class="form-field">
         <mat-label>Name</mat-label>
         <input [(ngModel)]="contactData.name" #emailInput matInput
-               required
+             required
                pattern="^[A-Za-zÀ-ÖØ-öø-ÿÄÖÜäöüß'’\-]+(?: [A-Za-zÀ-ÖØ-öø-ÿÄÖÜäöüß'’\-]+)+$"
                placeholder="{{ 'CONTACT.FORM.NAME' | translate }}" name="name"
                #name="ngModel">
@@ -16,7 +16,7 @@
           <mat-error class="error-msg">{{ 'CONTACT.FORM.ERROR.NAME' | translate }}</mat-error>
         }
       </mat-form-field>
-      <mat-form-field class="form-field">
+    <mat-form-field class="form-field">
         <mat-label>{{ 'CONTACT.FORM.EMAIL' | translate }}</mat-label>
         <input
           [(ngModel)]="contactData.email"

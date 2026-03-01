@@ -75,8 +75,6 @@
     }
   }
 
-
-
   .project-btn {
     margin: 10px 0 20px 0;
   }
@@ -91,25 +89,20 @@
 
 @media screen and (max-height: 430px) and (orientation: landscape) {
   .single-project {
-    margin: 40px 0 60px 0;
-    height: 85vh;
-  }
-  .project-info {
-    @include flex-box(row, center, center);
+    height: auto;
   }
 
   .project-txt {
-    > h1 {
-      font-size: 38px;
-    }
+    height: 100%;
+    margin: 0;
 
-    > p {
-      font-size: 16px;
+    > h1 {
+    margin: 0 10px 0 10px;
     }
   }
 
-  .project-img {
-    height: 95%;
+  .project-info {
+    @include flex-box(column, center, center);
   }
 }
 
@@ -136,31 +129,20 @@
 
 @media screen and (max-width: 550px) {
   .project-info {
-    margin: 0;
     width: 100%;
+    margin: 0;
   }
 
   .project-txt {
     margin: 0;
   }
-
-  .project-info {
-    height: 100%;
-
-    > img {
-      width: 90% !important;
-    }
-  }
-
 }
 
 @media screen and (max-width: 450px) {
-  .button-transparent {
-    font-size: 14px !important;
-    padding: 10px 15px !important;
-  }
+
   .single-project {
     width: 60vw !important;
+    height: 550px;
   }
 }
 
