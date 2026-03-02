@@ -35,6 +35,18 @@ swiper-container::part(bullet) {
   background-color: white !important;
 }
 
+@media screen and (max-width: 4600px) {
+  .projects {
+    height: 65vh;
+  }
+}
+
+@media screen and (max-width: 3030px) {
+  .projects {
+    height: 100vh;
+  }
+}
+
 
 
 @media screen and (max-width: 900px) and (orientation: landscape) {
