@@ -45,6 +45,12 @@ h1 {
   height: 550px;
 }
 
+@media screen and (min-width: 4600px) {
+  .contact-dialog  {
+    height: 55vh;
+  }
+}
+
 @media screen and (min-width: 3030px) {
   .contact-dialog  {
     height: 55vh;

@@ -33,14 +33,7 @@ export class Projects {
       GitHub: "https://github.com/KevinFi92/El-Pollo-Loco",
       inProgress: false
     },
-    {
-      name: "DABubble",
-      description: "PROJECTS.ITEMS.PROJECT_3.DESCRIPTION",
-      image: "assets/img/myLogo.png",
-      link: "https://kevin-fischer.dev/DABubble",
-      GitHub: "https://github.com/KevinFi92/DABubble",
-      inProgress: true
-    }
+
   ]
 
 }

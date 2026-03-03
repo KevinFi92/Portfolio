@@ -14,14 +14,13 @@
   width: 100%;
 }
 
-h1 {
-  font-size: 48px;
-}
-
-
 swiper-container {
   height: 80%;
   width: 90%;
+}
+
+h1{
+  font-size: 48px;
 }
 
 swiper-slide {
@@ -46,7 +45,6 @@ swiper-container::part(bullet) {
     height: 100vh;
   }
 }
-
 
 
 @media screen and (max-width: 900px) and (orientation: landscape) {
