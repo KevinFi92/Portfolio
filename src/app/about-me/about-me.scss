@@ -56,6 +56,12 @@ h1 {
   }
 }
 
+@media screen and (max-width: 2800px) {
+  .about-me {
+    height: auto;
+  }
+}
+
 @media screen and (max-width: 1410px) {
   .about-me {
     height: auto;
