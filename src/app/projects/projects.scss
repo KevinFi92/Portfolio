@@ -42,7 +42,13 @@ swiper-container::part(bullet) {
 
 @media screen and (max-width: 3030px) {
   .projects {
-    height: 100vh;
+    height: 1500px;
+  }
+}
+
+@media screen and (max-width: 1550px) {
+  .projects {
+    height: 1200px;
   }
 }
 

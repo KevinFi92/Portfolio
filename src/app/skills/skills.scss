@@ -28,7 +28,7 @@ h1 {
 .skill-icons {
   @include flex-box(row, center, center);
   display: grid;
-  grid-template-columns: repeat(5, 85px);
+  grid-template-columns: repeat(5, 100px);
   gap: 40px;
   width: 50%;
 
@@ -49,17 +49,21 @@ h1 {
 
 @media screen and (max-width: 1385px) {
   .skill-icons {
-    grid-template-columns: repeat(5, 70px);
+    grid-template-columns: repeat(5, 85px);
     > img {
-      height: 90px;
-      width: 90px;
+      height: 85px;
+      width: 85px;
     }
   }
 }
 
-@media screen and (max-width: 1115px) {
+@media screen and (max-width: 1200px) {
   .skill-icons {
     grid-template-columns: repeat(4, 70px);
+  }
+  > img {
+    height: 70px;
+    width: 70px;
   }
 }
 
@@ -79,11 +83,6 @@ h1 {
   }
 }
 
-@media screen and (min-width: 2800px) {
-  .skills  {
-    height: 45vh;
-  }
-}
 
 @media screen and (max-width: 900px) and (orientation: landscape) {
   .skill-content {
@@ -140,6 +139,7 @@ h1 {
   }
   h1 {
     font-size: 38px;
+    margin-bottom: 0;
   }
 }
 

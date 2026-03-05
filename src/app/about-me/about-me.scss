@@ -2,7 +2,7 @@
 
 .about-me {
   @include flex-box(column, center, center);
-  margin: 100px 50px 0 50px;
+  margin: 0 50px 0 50px;
   height: auto;
   scroll-margin-top: 80px;
 
@@ -50,11 +50,7 @@ h1 {
   }
 }
 
-@media screen and (max-width: 3030px) {
-  .about-me {
-    height: 100vh;
-  }
-}
+
 
 @media screen and (max-width: 2800px) {
   .about-me {
