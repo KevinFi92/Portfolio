@@ -78,6 +78,11 @@ export class ContactMe {
 
   onSubmit(ngForm: NgForm) {
     if (ngForm.submitted && ngForm.form.valid) {
+      this.contactData = {
+        name: this.contactData.name.trim(),
+        email: this.contactData.email.trim(),
+        message: this.contactData.message.trim(),
+      };
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {

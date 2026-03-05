@@ -7,7 +7,9 @@
     <form #contactForm="ngForm" class="contact-form" (ngSubmit)="onSubmit(contactForm)">
       <mat-form-field class="form-field">
         <mat-label>Name</mat-label>
-        <input [(ngModel)]="contactData.name" #emailInput matInput
+        <input
+          [(ngModel)]="contactData.name" #emailInput matInput
+          (blur)="contactData.name = (contactData.name ?? '').trim()"
              required
                pattern="^[A-Za-zÀ-ÖØ-öø-ÿÄÖÜäöüß'’\-]+(?: [A-Za-zÀ-ÖØ-öø-ÿÄÖÜäöüß'’\-]+)+$"
                placeholder="{{ 'CONTACT.FORM.NAME' | translate }}" name="name"
@@ -20,10 +22,12 @@
         <mat-label>{{ 'CONTACT.FORM.EMAIL' | translate }}</mat-label>
         <input
           [(ngModel)]="contactData.email"
+          (blur)="contactData.email = (contactData.email ?? '').trim()"
           name="email"
           matInput
           placeholder="pat@example.com"
-          required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+          required pattern="^[A-Za-z0-9_%+-]+(\.[A-Za-z0-9_%+-]+)*@[A-Za-z0-9-]+(\.[A-Za-z0-9-]+)+$"
+
           #email="ngModel"
         />
         @if (email.invalid) {
@@ -32,7 +36,7 @@
       </mat-form-field>
       <mat-form-field class="form-field" style="height: 250px">
         <mat-label>{{ 'CONTACT.FORM.MESSAGE' | translate }}</mat-label>
-        <textarea style="height: 190px" class="textarea" [(ngModel)]="contactData.message" name="message" #message="ngModel" matInput required></textarea>
+        <textarea style="height: 190px" class="textarea" [(ngModel)]="contactData.message" (blur)="contactData.message = (contactData.message ?? '').trim()" name="message" minlength="5" #message="ngModel" matInput required></textarea>
         @if (message.invalid) {
           <mat-error class="error-msg">{{ 'CONTACT.FORM.ERROR.MESSAGE' | translate }}</mat-error>
         }
