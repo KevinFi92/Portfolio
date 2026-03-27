@@ -47,12 +47,13 @@
   },
   "CONTACT": {
     "TITLE": "< contact me >",
-    "CHECKBOX": "I´ve read the privacy policy and agree to the processing of my data as outlined",
+    "CHECKBOX_1": "I´ve read the ",
+    "CHECKBOX_2": "privacy policy",
+    "CHECKBOX_3": " and agree to the processing of my data as outlined",
     "FORM": {
       "NAME": "Firstname Lastname",
       "EMAIL": "Enter your email",
       "MESSAGE": "Textarea",
-      "CHECKBOX": "I´ve read the privacy policy and agree to the processing of my data as outlined",
       "SEND_BUTTON": "Message Me",
       "SUCCESS": "",
       "ERROR": {

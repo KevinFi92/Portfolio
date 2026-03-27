@@ -47,7 +47,9 @@
   },
   "CONTACT": {
     "TITLE": "< Kontakt >",
-    "CHECKBOX": "Ich habe die Datenschutzerklärung gelesen und stimme der darin beschriebenen Verarbeitung meiner Daten zu.",
+    "CHECKBOX_1": "Ich habe die ",
+    "CHECKBOX_2": "Datenschutzerklärung",
+    "CHECKBOX_3": " gelesen und stimme der darin beschriebenen Verarbeitung meiner Daten zu.",
     "FORM": {
       "NAME": "Vor und Nachname",
       "EMAIL": "Email Adresse",

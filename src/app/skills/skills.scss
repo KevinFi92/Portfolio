@@ -59,7 +59,7 @@ h1 {
 
 @media screen and (max-width: 1200px) {
   .skill-icons {
-    grid-template-columns: repeat(4, 70px);
+  grid-template-columns: repeat(4, 70px);
   }
   > img {
     height: 70px;

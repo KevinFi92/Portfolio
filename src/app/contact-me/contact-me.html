@@ -42,7 +42,7 @@
         }
 
       </mat-form-field>
-      <mat-checkbox [checked]="privacyAccepted" (change)="privacyAccepted = $event.checked">{{ 'CONTACT.CHECKBOX' | translate }}</mat-checkbox>
+      <mat-checkbox [checked]="privacyAccepted" (change)="privacyAccepted = $event.checked">{{ 'CONTACT.CHECKBOX_1' | translate }}<a routerLink="/privacy-policy">{{ 'CONTACT.CHECKBOX_2' | translate }}</a>{{ 'CONTACT.CHECKBOX_3' | translate }}</mat-checkbox>
       <button type="submit"  class="button-transparent"
               [disabled]="contactForm.invalid || !privacyAccepted">{{ 'CONTACT.FORM.SEND_BUTTON' | translate }}
       </button>
